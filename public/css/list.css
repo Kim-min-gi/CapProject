@@ -1,0 +1,188 @@
+body{
+    padding: 0 13%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+.list {
+    
+	background-color: #ffffff;
+    width: 100vw;
+	border-bottom: 3px solid #f4f4f4;
+    float: left;
+}
+
+.listhead{
+	height: 3px;
+	width: 100vw;
+	background-color: #7a7a7a;
+}
+
+.infobox {
+    display: flex;
+    padding-top: 5px;
+    
+}
+.info-text{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.accent-button a {
+	margin-top: 65px;
+	margin-left: 7px;
+	font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #45489a;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 35px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a{
+    text-decoration:none;
+    font-size: 26px;
+    padding-top: 2px;
+    font-weight: 300px;
+    color:rgb(0, 0, 0)
+}
+
+
+
+
+.list_wrap {
+    display: flex;
+
+}
+
+.page{
+	position: absolute;
+	left: 45%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.bt0, .bt1, .bt2, .bt3, .bt4, .bt5, .bt9{
+	background-color:#fff;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    text-align: center;
+	font-weight: lighter;
+	padding: 5px;
+}
+
+/* Search Style */
+
+.container {
+	height: 30vh;
+	padding:0 10%;
+	border:0 none;
+	text-align:center;
+	font:20px/40px FontAwesome;
+	z-index:5;
+	top:60px;
+	right:300px;
+	width: 800px;
+	height:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+	}
+	.search-box {
+	  position:absolute ;
+	  width: 800px;
+	  height: 50px;
+	  max-width: 840px;
+	  border-radius: 120px;
+	  margin: 0 auto;
+	}
+	.search-icon, .go-icon {
+	  position: absolute;
+	  top: 0;
+	  height: 50px;
+	  width: 86px;
+	  line-height: 61px;
+	  text-align: center;
+	}
+	.search-icon {
+	  left: 0;
+	  pointer-events: none;
+	  font-size: 1.22em;
+	  will-change: transform;
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	  -o-transform: rotate(45deg);
+	  transform-origin: center center;
+	  -webkit-transform-origin: center center;
+	  -moz-transform-origin: center center;
+	  -o-transform-origin: center center;
+	  transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -webkit-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -moz-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -o-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	}
+	.si-rotate {
+	  transform: rotate(0deg);
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	}
+	.go-icon {
+	  right: 0;
+	  pointer-events: none;
+	  font-size: 1.38em;
+	  will-change: opacity;
+	  cursor: default;
+	  opacity: 0;
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	  -o-transform: rotate(45deg);
+	  transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -webkit-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -moz-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -o-transition: opacity 190ms ease-out, transform 260ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	}
+	.go-in {
+	  opacity: 1;
+	  pointer-events: all;
+	  cursor: pointer;
+	  transform: rotate(0);
+	  -webkit-transform: rotate(0);
+	  -moz-transform: rotate(0);
+	  -o-transform: rotate(0);
+	  transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -webkit-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -moz-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	  -o-transition: opacity 190ms ease-out, transform 260ms 20ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	}
+	
+	#search {
+	  font-family: 'Montserrat Alternates', sans-serif;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 800px;
+	  height: 50px;
+	  border-radius: 120px;
+	  border: none;
+	  background: rgba(255,255,255,0);
+	  padding: 0 68px 0 68px;
+	  color: #000000;
+	  font-size: 1.32em;
+	  font-weight: 400;
+	  letter-spacing: -0.015em;
+	  outline: none;
+	}
+	#search::-webkit-input-placeholder {color: #000000;}
+	#search::-moz-placeholder {color: #000000;}
+	#search:-ms-input-placeholder {color: #000000;}
+	#search:-moz-placeholder {color: #000000;}
+	#search::-moz-selection {color: #FFFFFF; background: rgba(0,0,0,0.25);}
+	#search::selection {color: #FFFFFF; background: rgba(0,0,0,0.25);}

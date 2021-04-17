@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="css/list.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>목록 최종</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    
+   
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+        <div class="container">
+            <div class="search-box">
+              <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+              <form action="/listsearch" class="search-form">
+                <input type="text" placeholder="검색어를 입력해주세요." id="search" name="search" autocomplete="off">
+              </form>
+              <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+            </div>
+          </div>
+
+    <div style = "overflow:hidden">
+        <div class="listhead"></div>
+        <div class="list">  
+        <div class="list_wrap">
+            <div class="wrap1">
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img0">
+                        </div>
+                        <div class="info-text">
+                            <div class="title0">
+                                title=
+                            </div>
+                            <div class="addr0">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img1">
+                        </div>
+                        <div class="info-text">
+                            <div class="title1">
+                                title=
+                            </div>
+                            <div class="addr1">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img2">
+                        </div>
+                        <div class="info-text">
+                            <div class="title2">
+                                title=
+                            </div>
+                            <div class="addr2">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img3">
+                        </div>
+                        <div class="info-text">
+                            <div class="title3">
+                                title=
+                            </div>
+                            <div class="addr3">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img4">
+                        </div>
+                        <div class="info-text">
+                            <div class="title4">
+                                title=
+                            </div>
+                            <div class="addr4">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img5">
+                        </div>
+                        <div class="info-text">
+                            <div class="title5">
+                                title=
+                            </div>
+                            <div class="addr5">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrap2">
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img6">
+                        </div>
+                        <div class="info-text">
+                            <div class="title6">
+                                title=
+                            </div>
+                            <div class="addr6">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img7">
+                        </div>
+                        <div class="info-text">
+                            <div class="title7">
+                                title=
+                            </div>
+                            <div class="addr7">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img8">
+                        </div>
+                        <div class="info-text">
+                            <div class="title8">
+                                title=
+                            </div>
+                            <div class="addr8">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img9">
+                        </div>
+                        <div class="info-text">
+                            <div class="title9">
+                                title=
+                            </div>
+                            <div class="addr9">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img10">
+                        </div>
+                        <div class="info-text">
+                            <div class="title10">
+                                title=
+                            </div>
+                            <div class="addr10">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img11">
+                        </div>
+                        <div class="info-text">
+                            <div class="title11">
+                                title=
+                            </div>
+                            <div class="addr11">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrap3">
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img12">
+                        </div>
+                        <div class="info-text">
+                            <div class="title12">
+                                title=
+                            </div>
+                            <div class="addr12">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img13">
+                        </div>
+                        <div class="info-text">
+                            <div class="title13">
+                                title=
+                            </div>
+                            <div class="addr13">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img14">
+                        </div>
+                        <div class="info-text">
+                            <div class="title14">
+                                title=
+                            </div>
+                            <div class="addr14">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img15">
+                        </div>
+                        <div class="info-text">
+                            <div class="title15">
+                                title=
+                            </div>
+                            <div class="addr15">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img16">
+                        </div>
+                        <div class="info-text">
+                            <div class="title16">
+                                title=
+                            </div>
+                            <div class="addr16">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img17">
+                        </div>
+                        <div class="info-text">
+                            <div class="title17">
+                                title=
+                            </div>
+                            <div class="addr17">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrap4">
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img18">
+                        </div>
+                        <div class="info-text">
+                            <div class="title18">
+                                title=
+                            </div>
+                            <div class="addr18">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img19">
+                        </div>
+                        <div class="info-text">
+                            <div class="title19">
+                                title=
+                            </div>
+                            <div class="addr19">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img20">
+                        </div>
+                        <div class="info-text">
+                            <div class="title20">
+                                title=
+                            </div>
+                            <div class="addr20">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img21">
+                        </div>
+                        <div class="info-text">
+                            <div class="title21">
+                                title=
+                            </div>
+                            <div class="addr21">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img22">
+                        </div>
+                        <div class="info-text">
+                            <div class="title22">
+                                title=
+                            </div>
+                            <div class="addr22">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img23">
+                        </div>
+                        <div class="info-text">
+                            <div class="title23">
+                                title=
+                            </div>
+                            <div class="addr23">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrap5">
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img24">
+                        </div>
+                        <div class="info-text">
+                            <div class="title24">
+                                title=
+                            </div>
+                            <div class="addr24">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img25">
+                        </div>
+                        <div class="info-text">
+                            <div class="title25">
+                                title=
+                            </div>
+                            <div class="addr25">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img26">
+                        </div>
+                        <div class="info-text">
+                            <div class="title26">
+                                title=
+                            </div>
+                            <div class="addr26">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img27">
+                        </div>
+                        <div class="info-text">
+                            <div class="title27">
+                                title=
+                            </div>
+                            <div class="addr27">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img28">
+                        </div>
+                        <div class="info-text">
+                            <div class="title28">
+                                title=
+                            </div>
+                            <div class="addr28">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="infobox">
+                        <div class="info-img29">
+                        </div>
+                        <div class="info-text">
+                            <div class="title29">
+                                title=
+                            </div>
+                            <div class="addr29">
+                                addr=
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+        </div>
+    
+    
+    
+        <div class="page">
+            <button class="bt0"><<</button>
+            <button class="bt1">1</button>
+            <button class="bt2">2</button>
+            <button class="bt3">3</button>
+            <button class="bt4">4</button>
+            <button class="bt5">5</button>
+            <button class="bt9">>></button>
+        </div>    
+    
+    
+        <script type="text/javascript">
+            document.querySelector('.bt2').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-100vw)';
+            });
+            document.querySelector('.bt3').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-200vw)';
+            });
+            document.querySelector('.bt4').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-300vw)';
+            });
+            document.querySelector('.bt5').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-400vw)';
+            });
+            document.querySelector('.bt1').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-0vw)';
+            });
+            document.querySelector('.bt0').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-0vw)';
+            });
+            document.querySelector('.bt9').addEventListener('click', function(){
+                document.querySelector('.list').style.transform = 'translate(-400vw)';
+            });
+        </script>
+
+    <script>
+        var Val = '<%=ser%>';     //입력창 값 전달
+        var inputVal = Val;  //입력된값저장
+        var inputValescape = encodeURI(inputVal);  //인코딩
+        $.getJSON(
+            'http://api.visitkorea.or.kr/openapi/service/rest/KorService/searchKeyword?ServiceKey=6YaWFbmIjrHFjffRP7kOiUmCPVNpcUny7t6%2BV1GPx4Zh72Bz1fLFzTy9WV2a5LmpgMsVLjPBJdjvli7vSxvnyg%3D%3D&keyword=' + inputValescape + '&arrange=B&pageNo=1&numOfRows=35&MobileOS=ETC&MobileApp=AppTesting',
+            function (result) {
+                $('.info-img0').empty();
+                $('.title0').empty();
+                $('.addr0').empty();
+                $('.info-img1').empty();
+                $('.title1').empty();
+                $('.addr1').empty();
+                $('.info-img2').empty();
+                $('.title2').empty();
+                $('.addr2').empty();
+                $('.info-img3').empty();
+                $('.title3').empty();
+                $('.addr3').empty();
+                $('.info-img4').empty();
+                $('.title4').empty();
+                $('.addr4').empty();
+                $('.info-img5').empty();
+                $('.title5').empty();
+                $('.addr5').empty();
+                $('.info-img6').empty();
+                $('.title6').empty();
+                $('.addr6').empty();
+                $('.info-img7').empty();
+                $('.title7').empty();
+                $('.addr7').empty();
+                $('.info-img8').empty();
+                $('.title8').empty();
+                $('.addr8').empty();
+                $('.info-img9').empty();
+                $('.title9').empty();
+                $('.addr9').empty();
+                $('.info-img10').empty();
+                $('.title10').empty();
+                $('.addr10').empty();
+                $('.info-img11').empty();
+                $('.title11').empty();
+                $('.addr11').empty();
+                $('.info-img12').empty();
+                $('.title12').empty();
+                $('.addr12').empty();
+                $('.info-img13').empty();
+                $('.title13').empty();
+                $('.addr13').empty();
+                $('.info-img14').empty();
+                $('.title14').empty();
+                $('.addr14').empty();
+                $('.info-img15').empty();
+                $('.title15').empty();
+                $('.addr15').empty();
+                $('.info-img16').empty();
+                $('.title16').empty();
+                $('.addr16').empty();
+                $('.info-img17').empty();
+                $('.title17').empty();
+                $('.addr17').empty();
+                $('.info-img18').empty();
+                $('.title18').empty();
+                $('.addr18').empty();
+                $('.info-img19').empty();
+                $('.title19').empty();
+                $('.addr19').empty();
+                $('.info-img20').empty();
+                $('.title20').empty();
+                $('.addr20').empty();
+                $('.info-img21').empty();
+                $('.title21').empty();
+                $('.addr21').empty();
+                $('.info-img22').empty();
+                $('.title22').empty();
+                $('.addr22').empty();
+                $('.info-img23').empty();
+                $('.title23').empty();
+                $('.addr23').empty();
+                $('.info-img24').empty();
+                $('.title24').empty();
+                $('.addr24').empty();
+                $('.info-img25').empty();
+                $('.title25').empty();
+                $('.addr25').empty();
+                $('.info-img26').empty();
+                $('.title26').empty();
+                $('.addr26').empty();
+                $('.info-img27').empty();
+                $('.title27').empty();
+                $('.addr27').empty();
+                $('.info-img28').empty();
+                $('.title28').empty();
+                $('.addr28').empty();
+                $('.info-img29').empty();
+                $('.title29').empty();
+                $('.addr29').empty();
+                var $Img0 = result.response.body.items.item[0].firstimage;
+                var $Title0 = result.response.body.items.item[0].title;
+                var $Addr0 = result.response.body.items.item[0].addr1 + result.response.body.items.item[0].addr2;
+                var $Img1 = result.response.body.items.item[1].firstimage;
+                var $Title1 = result.response.body.items.item[1].title;
+                var $Addr1 = result.response.body.items.item[1].addr1 + result.response.body.items.item[1].addr2;
+                var $Img2 = result.response.body.items.item[2].firstimage;
+                var $Title2 = result.response.body.items.item[2].title;
+                var $Addr2 = result.response.body.items.item[2].addr1 + result.response.body.items.item[2].addr2;
+                var $Img3 = result.response.body.items.item[3].firstimage;
+                var $Title3 = result.response.body.items.item[3].title;
+                var $Addr3 = result.response.body.items.item[3].addr1 + result.response.body.items.item[3].addr2;
+                var $Img4 = result.response.body.items.item[4].firstimage;
+                var $Title4 = result.response.body.items.item[4].title;
+                var $Addr4 = result.response.body.items.item[4].addr1 + result.response.body.items.item[4].addr2;
+                var $Img5 = result.response.body.items.item[5].firstimage;
+                var $Title5 = result.response.body.items.item[5].title;
+                var $Addr5 = result.response.body.items.item[5].addr1 + result.response.body.items.item[5].addr2;
+                var $Img6 = result.response.body.items.item[6].firstimage;
+                var $Title6 = result.response.body.items.item[6].title;
+                var $Addr6 = result.response.body.items.item[6].addr1 + result.response.body.items.item[6].addr2;
+                var $Img7 = result.response.body.items.item[7].firstimage;
+                var $Title7 = result.response.body.items.item[7].title;
+                var $Addr7 = result.response.body.items.item[7].addr1 + result.response.body.items.item[7].addr2;
+                var $Img8 = result.response.body.items.item[8].firstimage;
+                var $Title8 = result.response.body.items.item[8].title;
+                var $Addr8 = result.response.body.items.item[8].addr1 + result.response.body.items.item[8].addr2;
+                var $Img9 = result.response.body.items.item[9].firstimage;
+                var $Title9 = result.response.body.items.item[9].title;
+                var $Addr9 = result.response.body.items.item[9].addr1 + result.response.body.items.item[9].addr2;
+                var $Img10 = result.response.body.items.item[10].firstimage;
+                var $Title10 = result.response.body.items.item[10].title;
+                var $Addr10 = result.response.body.items.item[10].addr1 + result.response.body.items.item[10].addr2;
+                var $Img11 = result.response.body.items.item[11].firstimage;
+                var $Title11 = result.response.body.items.item[11].title;
+                var $Addr11 = result.response.body.items.item[11].addr1 + result.response.body.items.item[11].addr2;
+                var $Img12 = result.response.body.items.item[12].firstimage;
+                var $Title12 = result.response.body.items.item[12].title;
+                var $Addr12 = result.response.body.items.item[12].addr1 + result.response.body.items.item[12].addr2;
+                var $Img13 = result.response.body.items.item[13].firstimage;
+                var $Title13 = result.response.body.items.item[13].title;
+                var $Addr13 = result.response.body.items.item[13].addr1 + result.response.body.items.item[13].addr2;
+                var $Img14 = result.response.body.items.item[14].firstimage;
+                var $Title14 = result.response.body.items.item[14].title;
+                var $Addr14 = result.response.body.items.item[14].addr1 + result.response.body.items.item[14].addr2;
+                var $Img15 = result.response.body.items.item[15].firstimage;
+                var $Title15 = result.response.body.items.item[15].title;
+                var $Addr15 = result.response.body.items.item[15].addr1 + result.response.body.items.item[15].addr2;
+                var $Img16 = result.response.body.items.item[16].firstimage;
+                var $Title16 = result.response.body.items.item[16].title;
+                var $Addr16 = result.response.body.items.item[16].addr1 + result.response.body.items.item[16].addr2;
+                var $Img17 = result.response.body.items.item[17].firstimage;
+                var $Title17 = result.response.body.items.item[17].title;
+                var $Addr17 = result.response.body.items.item[17].addr1 + result.response.body.items.item[17].addr2;
+                var $Img18 = result.response.body.items.item[18].firstimage;
+                var $Title18 = result.response.body.items.item[18].title;
+                var $Addr18 = result.response.body.items.item[18].addr1 + result.response.body.items.item[18].addr2;
+                var $Img19 = result.response.body.items.item[19].firstimage;
+                var $Title19 = result.response.body.items.item[19].title;
+                var $Addr19 = result.response.body.items.item[19].addr1 + result.response.body.items.item[19].addr2;
+                var $Img20 = result.response.body.items.item[20].firstimage;
+                var $Title20 = result.response.body.items.item[20].title;
+                var $Addr20 = result.response.body.items.item[20].addr1 + result.response.body.items.item[20].addr2;
+                var $Img21 = result.response.body.items.item[21].firstimage;
+                var $Title21 = result.response.body.items.item[21].title;
+                var $Addr21 = result.response.body.items.item[21].addr1 + result.response.body.items.item[21].addr2;
+                var $Img22 = result.response.body.items.item[22].firstimage;
+                var $Title22 = result.response.body.items.item[22].title;
+                var $Addr22 = result.response.body.items.item[22].addr1 + result.response.body.items.item[22].addr2;
+                var $Img23 = result.response.body.items.item[23].firstimage;
+                var $Title23 = result.response.body.items.item[23].title;
+                var $Addr23 = result.response.body.items.item[23].addr1 + result.response.body.items.item[23].addr2;
+                var $Img24 = result.response.body.items.item[24].firstimage;
+                var $Title24 = result.response.body.items.item[24].title;
+                var $Addr24 = result.response.body.items.item[24].addr1 + result.response.body.items.item[24].addr2;
+                var $Img25 = result.response.body.items.item[25].firstimage;
+                var $Title25 = result.response.body.items.item[25].title;
+                var $Addr25 = result.response.body.items.item[25].addr1 + result.response.body.items.item[25].addr2;
+                var $Img26 = result.response.body.items.item[26].firstimage;
+                var $Title26 = result.response.body.items.item[26].title;
+                var $Addr26 = result.response.body.items.item[26].addr1 + result.response.body.items.item[26].addr2;
+                var $Img27 = result.response.body.items.item[27].firstimage;
+                var $Title27 = result.response.body.items.item[27].title;
+                var $Addr27 = result.response.body.items.item[27].addr1 + result.response.body.items.item[27].addr2;
+                var $Img28 = result.response.body.items.item[28].firstimage;
+                var $Title28 = result.response.body.items.item[28].title;
+                var $Addr28 = result.response.body.items.item[28].addr1 + result.response.body.items.item[28].addr2;
+                var $Img29 = result.response.body.items.item[29].firstimage;
+                var $Title29 = result.response.body.items.item[29].title;
+                var $Addr29 = result.response.body.items.item[29].addr1 + result.response.body.items.item[29].addr2;
+                $('.info-img0').append('<img src="' + $Img0 + '" width=300 height=200 alt="">');
+                $('.info-img0').css('padding', '15px')
+                $('.info-img0').css('margin-left', '14px')
+                $('.info-img0').css('margin-right', '5px')
+                $('.title0').append('<a href="javascript:goToFinalURL()">' + $Title0 + '</a>');
+                $('.title0').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title0').css('font-size', '40px');
+                $('.title0').css('padding', '7px');
+                $('.addr0').append($Addr0);
+                $('.addr0').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr0').css('color', '#7a7a7a');
+                $('.addr0').css('font-size', '17px');
+                $('.addr0').css('padding-left', '7px');
+                $('.info-img1').append('<img src="' + $Img1 + '" width=300 height=200 alt="">');
+                $('.info-img1').css('margin-left', '14px')
+                $('.info-img1').css('padding', '15px')
+                $('.info-img1').css('margin-right', '5px')
+                $('.title1').append('<a href="javascript:goToFinalURL()">' + $Title1 + '</a>');
+                $('.title1').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title1').css('font-size', '30px');
+                $('.title1').css('padding', '7px');
+                $('.addr1').append($Addr1);
+                $('.addr1').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr1').css('color', '#7a7a7a');
+                $('.addr1').css('font-size', '17px');
+                $('.addr1').css('padding-left', '7px');
+                $('.info-img2').append('<img src="' + $Img2 + '" width=300 height=200 alt="">');
+                $('.info-img2').css('margin-left', '14px')
+                $('.info-img2').css('padding', '15px')
+                $('.info-img2').css('margin-right', '5px')
+                $('.title2').append('<a href="javascript:goToFinalURL()">' + $Title2 + '</a>');
+                $('.title2').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title2').css('font-size', '30px');
+                $('.title2').css('padding', '7px');
+                $('.addr2').append($Addr2);
+                $('.addr2').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr2').css('color', '#7a7a7a');
+                $('.addr2').css('font-size', '17px');
+                $('.addr2').css('padding-left', '7px');
+                $('.info-img3').append('<img src="' + $Img3 + '" width=300 height=200 alt="">');
+                $('.info-img3').css('margin-left', '14px')
+                $('.info-img3').css('padding', '15px')
+                $('.info-img3').css('margin-right', '5px')
+                $('.title3').append('<a href="javascript:goToFinalURL()">' + $Title3 + '</a>');
+                $('.title3').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title3').css('font-size', '30px');
+                $('.title3').css('padding', '7px');
+                $('.addr3').append($Addr3);
+                $('.addr3').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr3').css('color', '#7a7a7a');
+                $('.addr3').css('font-size', '17px');
+                $('.addr3').css('padding-left', '7px');
+                $('.info-img4').append('<img src="' + $Img4 + '" width=300 height=200 alt="">');
+                $('.info-img4').css('margin-left', '14px')
+                $('.info-img4').css('padding', '15px')
+                $('.info-img4').css('margin-right', '5px')
+                $('.title4').append('<a href="javascript:goToFinalURL()">' + $Title4 + '</a>');
+                $('.title4').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title4').css('font-size', '30px');
+                $('.title4').css('padding', '7px');
+                $('.addr4').append($Addr4);
+                $('.addr4').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr4').css('color', '#7a7a7a');
+                $('.addr4').css('font-size', '17px');
+                $('.addr4').css('padding-left', '7px');
+                $('.info-img5').append('<img src="' + $Img5 + '" width=300 height=200 alt="">');
+                $('.info-img5').css('margin-left', '14px')
+                $('.info-img5').css('padding', '15px')
+                $('.info-img5').css('margin-right', '5px')
+                $('.title5').append('<a href="javascript:goToFinalURL()">' + $Title5 + '</a>');
+                $('.title5').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title5').css('font-size', '30px');
+                $('.title5').css('padding', '7px');
+                $('.addr5').append($Addr5);
+                $('.addr5').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr5').css('color', '#7a7a7a');
+                $('.addr5').css('font-size', '17px');
+                $('.addr5').css('padding-left', '7px');
+                $('.info-img6').append('<img src="' + $Img6 + '" width=300 height=200 alt="">');
+                $('.info-img6').css('margin-left', '14px')
+                $('.info-img6').css('padding', '15px')
+                $('.info-img6').css('margin-right', '5px')
+                $('.title6').append('<a href="javascript:goToFinalURL()">' + $Title6 + '</a>');
+                $('.title6').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title6').css('font-size', '30px');
+                $('.title6').css('padding', '7px');
+                $('.addr6').append($Addr6);
+                $('.addr6').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr6').css('color', '#7a7a7a');
+                $('.addr6').css('font-size', '17px');
+                $('.addr6').css('padding-left', '7px');
+                $('.info-img7').append('<img src="' + $Img7 + '" width=300 height=200 alt="">');
+                $('.info-img7').css('margin-left', '14px')
+                $('.info-img7').css('padding', '15px')
+                $('.info-img7').css('margin-right', '5px')
+                $('.title7').append('<a href="javascript:goToFinalURL()">' + $Title7 + '</a>');
+                $('.title7').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title7').css('font-size', '30px');
+                $('.title7').css('padding', '7px');
+                $('.addr7').append($Addr7);
+                $('.addr7').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr7').css('color', '#7a7a7a');
+                $('.addr7').css('font-size', '17px');
+                $('.addr7').css('padding-left', '7px');
+                $('.info-img8').append('<img src="' + $Img8 + '" width=300 height=200 alt="">');
+                $('.info-img8').css('margin-left', '14px')
+                $('.info-img8').css('padding', '15px')
+                $('.info-img8').css('margin-right', '5px')
+                $('.title8').append('<a href="javascript:goToFinalURL()">' + $Title8 + '</a>');
+                $('.title8').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title8').css('font-size', '30px');
+                $('.title8').css('padding', '7px');
+                $('.addr8').append($Addr8);
+                $('.addr8').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr8').css('color', '#7a7a7a');
+                $('.addr8').css('font-size', '17px');
+                $('.addr8').css('padding-left', '7px');
+                $('.info-img9').append('<img src="' + $Img9 + '" width=300 height=200 alt="">');
+                $('.info-img9').css('margin-left', '14px')
+                $('.info-img9').css('padding', '15px')
+                $('.info-img9').css('margin-right', '5px')
+                $('.title9').append('<a href="javascript:goToFinalURL()">' + $Title9 + '</a>');
+                $('.title9').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title9').css('font-size', '30px');
+                $('.title9').css('padding', '7px');
+                $('.addr9').append($Addr9);
+                $('.addr9').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr9').css('color', '#7a7a7a');
+                $('.addr9').css('font-size', '17px');
+                $('.addr9').css('padding-left', '7px');
+                $('.info-img10').append('<img src="' + $Img10 + '" width=300 height=200 alt="">');
+                $('.info-img10').css('margin-left', '14px')
+                $('.info-img10').css('padding', '15px')
+                $('.info-img10').css('margin-right', '5px')
+                $('.title10').append('<a href="javascript:goToFinalURL()">' + $Title10 + '</a>');
+                $('.title10').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title10').css('font-size', '30px');
+                $('.title10').css('padding', '7px');
+                $('.addr10').append($Addr10);
+                $('.addr10').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr10').css('color', '#7a7a7a');
+                $('.addr10').css('font-size', '17px');
+                $('.addr10').css('padding-left', '7px');
+                $('.info-img11').append('<img src="' + $Img11 + '" width=300 height=200 alt="">');
+                $('.info-img11').css('margin-left', '14px')
+                $('.info-img11').css('padding', '15px')
+                $('.info-img11').css('margin-right', '5px')
+                $('.title11').append('<a href="javascript:goToFinalURL()">' + $Title11 + '</a>');
+                $('.title11').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title11').css('font-size', '30px');
+                $('.title11').css('padding', '7px');
+                $('.addr11').append($Addr11);
+                $('.addr11').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr11').css('color', '#7a7a7a');
+                $('.addr11').css('font-size', '17px');
+                $('.addr11').css('padding-left', '7px');
+                $('.info-img12').append('<img src="' + $Img12 + '" width=300 height=200 alt="">');
+                $('.info-img12').css('margin-left', '14px')
+                $('.info-img12').css('padding', '15px')
+                $('.info-img12').css('margin-right', '5px')
+                $('.title12').append('<a href="javascript:goToFinalURL()">' + $Title12 + '</a>');
+                $('.title12').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title12').css('font-size', '30px');
+                $('.title12').css('padding', '7px');
+                $('.addr12').append($Addr12);
+                $('.addr12').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr12').css('color', '#7a7a7a');
+                $('.addr12').css('font-size', '17px');
+                $('.addr12').css('padding-left', '7px');
+                $('.info-img13').append('<img src="' + $Img13 + '" width=300 height=200 alt="">');
+                $('.info-img13').css('margin-left', '14px')
+                $('.info-img13').css('padding', '15px')
+                $('.info-img13').css('margin-right', '5px')
+                $('.title13').append('<a href="javascript:goToFinalURL()">' + $Title13 + '</a>');
+                $('.title13').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title13').css('font-size', '30px');
+                $('.title13').css('padding', '7px');
+                $('.addr13').append($Addr13);
+                $('.addr13').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr13').css('color', '#7a7a7a');
+                $('.addr13').css('font-size', '17px');
+                $('.addr13').css('padding-left', '7px');
+                $('.info-img14').append('<img src="' + $Img14 + '" width=300 height=200 alt="">');
+                $('.info-img14').css('margin-left', '14px')
+                $('.info-img14').css('padding', '15px')
+                $('.info-img14').css('margin-right', '5px')
+                $('.title14').append('<a href="javascript:goToFinalURL()">' + $Title14 + '</a>');
+                $('.title14').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title14').css('font-size', '30px');
+                $('.title14').css('padding', '7px');
+                $('.addr14').append($Addr14);
+                $('.addr14').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr14').css('color', '#7a7a7a');
+                $('.addr14').css('font-size', '17px');
+                $('.addr14').css('padding-left', '7px');
+                $('.info-img15').append('<img src="' + $Img15 + '" width=300 height=200 alt="">');
+                $('.info-img15').css('margin-left', '14px')
+                $('.info-img15').css('padding', '15px')
+                $('.info-img15').css('margin-right', '5px')
+                $('.title15').append('<a href="javascript:goToFinalURL()">' + $Title15 + '</a>');
+                $('.title15').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title15').css('font-size', '30px');
+                $('.title15').css('padding', '7px');
+                $('.addr15').append($Addr15);
+                $('.addr15').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr15').css('color', '#7a7a7a');
+                $('.addr15').css('font-size', '17px');
+                $('.addr15').css('padding-left', '7px');
+                $('.info-img16').append('<img src="' + $Img16 + '" width=300 height=200 alt="">');
+                $('.info-img16').css('margin-left', '14px')
+                $('.info-img16').css('padding', '15px')
+                $('.info-img16').css('margin-right', '5px')
+                $('.title16').append('<a href="javascript:goToFinalURL()">' + $Title16 + '</a>');
+                $('.title16').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title16').css('font-size', '30px');
+                $('.title16').css('padding', '7px');
+                $('.addr16').append($Addr16);
+                $('.addr16').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr16').css('color', '#7a7a7a');
+                $('.addr16').css('font-size', '17px');
+                $('.addr16').css('padding-left', '7px');
+                $('.info-img17').append('<img src="' + $Img17 + '" width=300 height=200 alt="">');
+                $('.info-img17').css('margin-left', '14px')
+                $('.info-img17').css('padding', '15px')
+                $('.info-img17').css('margin-right', '5px')
+                $('.title17').append('<a href="javascript:goToFinalURL()">' + $Title17 + '</a>');
+                $('.title0').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title0').css('font-size', '30px');
+                $('.title0').css('padding', '7px');
+                $('.addr17').append($Addr17);
+                $('.addr17').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr17').css('color', '#7a7a7a');
+                $('.addr17').css('font-size', '17px');
+                $('.addr17').css('padding-left', '7px');
+                $('.info-img18').append('<img src="' + $Img18 + '" width=300 height=200 alt="">');
+                $('.info-img18').css('margin-left', '14px')
+                $('.info-img18').css('padding', '15px')
+                $('.info-img18').css('margin-right', '5px')
+                $('.title18').append('<a href="javascript:goToFinalURL()">' + $Title18 + '</a>');
+                $('.title18').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title18').css('font-size', '30px');
+                $('.title18').css('padding', '7px');
+                $('.addr18').append($Addr18);
+                $('.addr18').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr18').css('color', '#7a7a7a');
+                $('.addr18').css('font-size', '17px');
+                $('.addr18').css('padding-left', '7px');
+                $('.info-img19').append('<img src="' + $Img19 + '" width=300 height=200 alt="">');
+                $('.info-img19').css('margin-left', '14px')
+                $('.info-img19').css('padding', '15px')
+                $('.info-img19').css('margin-right', '5px')
+                $('.title19').append('<a href="javascript:goToFinalURL()">' + $Title19 + '</a>');
+                $('.title19').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title19').css('font-size', '30px');
+                $('.title19').css('padding', '7px');
+                $('.addr19').append($Addr19);
+                $('.addr19').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr19').css('color', '#7a7a7a');
+                $('.addr19').css('font-size', '17px');
+                $('.addr19').css('padding-left', '7px');
+                $('.info-img20').append('<img src="' + $Img20 + '" width=300 height=200 alt="">');
+                $('.info-img20').css('margin-left', '14px')
+                $('.info-img20').css('padding', '15px')
+                $('.info-img20').css('margin-right', '5px')
+                $('.title20').append('<a href="javascript:goToFinalURL()">' + $Title20 + '</a>');
+                $('.title20').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title20').css('font-size', '30px');
+                $('.title20').css('padding', '7px');
+                $('.addr20').append($Addr20);
+                $('.addr20').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr20').css('color', '#7a7a7a');
+                $('.addr20').css('font-size', '17px');
+                $('.addr20').css('padding-left', '7px');
+                $('.info-img21').append('<img src="' + $Img21 + '" width=300 height=200 alt="">');
+                $('.info-img21').css('margin-left', '14px')
+                $('.info-img21').css('padding', '15px')
+                $('.info-img21').css('margin-right', '5px')
+                $('.title21').append('<a href="javascript:goToFinalURL()">' + $Title21 + '</a>');
+                $('.title21').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title21').css('font-size', '30px');
+                $('.title21').css('padding', '7px');
+                $('.addr21').append($Addr21);
+                $('.addr21').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr21').css('color', '#7a7a7a');
+                $('.addr21').css('font-size', '17px');
+                $('.addr21').css('padding-left', '7px');
+                $('.info-img22').append('<img src="' + $Img22 + '" width=300 height=200 alt="">');
+                $('.info-img22').css('margin-left', '14px')
+                $('.info-img22').css('padding', '15px')
+                $('.info-img22').css('margin-right', '5px')
+                $('.title22').append('<a href="javascript:goToFinalURL()">' + $Title22 + '</a>');
+                $('.title22').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title22').css('font-size', '30px');
+                $('.title22').css('padding', '7px');
+                $('.addr22').append($Addr22);
+                $('.addr22').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr22').css('color', '#7a7a7a');
+                $('.addr22').css('font-size', '17px');
+                $('.addr22').css('padding-left', '7px');
+                $('.info-img23').append('<img src="' + $Img23 + '" width=300 height=200 alt="">');
+                $('.info-img23').css('margin-left', '14px')
+                $('.info-img23').css('padding', '15px')
+                $('.info-img23').css('margin-right', '5px')
+                $('.title23').append('<a href="javascript:goToFinalURL()">' + $Title23 + '</a>');
+                $('.title23').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title23').css('font-size', '30px');
+                $('.title23').css('padding', '7px');
+                $('.addr23').append($Addr23);
+                $('.addr23').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr23').css('color', '#7a7a7a');
+                $('.addr23').css('font-size', '17px');
+                $('.addr23').css('padding-left', '7px');
+                $('.info-img24').append('<img src="' + $Img24 + '" width=300 height=200 alt="">');
+                $('.info-img24').css('margin-left', '14px')
+                $('.info-img24').css('padding', '15px')
+                $('.info-img24').css('margin-right', '5px')
+                $('.title24').append('<a href="javascript:goToFinalURL()">' + $Title24 + '</a>');
+                $('.title24').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title24').css('font-size', '30px');
+                $('.title24').css('padding', '7px');
+                $('.addr24').append($Addr24);
+                $('.addr24').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr24').css('color', '#7a7a7a');
+                $('.addr24').css('font-size', '17px');
+                $('.addr24').css('padding-left', '7px');
+                $('.info-img25').append('<img src="' + $Img25 + '" width=300 height=200 alt="">');
+                $('.info-img25').css('margin-left', '14px')
+                $('.info-img25').css('padding', '15px')
+                $('.info-img25').css('margin-right', '5px')
+                $('.title25').append('<a href="javascript:goToFinalURL()">' + $Title25 + '</a>');
+                $('.title25').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title25').css('font-size', '30px');
+                $('.title25').css('padding', '7px');
+                $('.addr25').append($Addr25);
+                $('.addr25').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr25').css('color', '#7a7a7a');
+                $('.addr25').css('font-size', '17px');
+                $('.addr25').css('padding-left', '7px');
+                $('.info-img26').append('<img src="' + $Img26 + '" width=300 height=200 alt="">');
+                $('.info-img26').css('margin-left', '14px')
+                $('.info-img26').css('padding', '15px')
+                $('.info-img26').css('margin-right', '5px')
+                $('.title26').append('<a href="javascript:goToFinalURL()">' + $Title26 + '</a>');
+                $('.title26').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title26').css('font-size', '30px');
+                $('.title26').css('padding', '7px');
+                $('.addr26').append($Addr26);
+                $('.addr26').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr26').css('color', '#7a7a7a');
+                $('.addr26').css('font-size', '17px');
+                $('.addr26').css('padding-left', '7px');
+                $('.info-img27').append('<img src="' + $Img27 + '" width=300 height=200 alt="">');
+                $('.info-img27').css('margin-left', '14px')
+                $('.info-img27').css('padding', '15px')
+                $('.info-img27').css('margin-right', '5px')
+                $('.title27').append('<a href="javascript:goToFinalURL()">' + $Title27 + '</a>');
+                $('.title27').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title27').css('font-size', '30px');
+                $('.title27').css('padding', '7px');
+                $('.addr27').append($Addr27);
+                $('.addr27').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr27').css('color', '#7a7a7a');
+                $('.addr27').css('font-size', '17px');
+                $('.addr27').css('padding-left', '7px');
+                $('.info-img28').append('<img src="' + $Img28 + '" width=300 height=200 alt="">');
+                $('.info-img28').css('margin-left', '14px')
+                $('.info-img28').css('padding', '15px')
+                $('.info-img28').css('margin-right', '5px')
+                $('.title28').append('<a href="javascript:goToFinalURL()">' + $Title28 + '</a>');
+                $('.title28').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title28').css('font-size', '30px');
+                $('.title28').css('padding', '7px');
+                $('.addr28').append($Addr28);
+                $('.addr28').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr28').css('color', '#7a7a7a');
+                $('.addr28').css('font-size', '17px');
+                $('.addr28').css('padding-left', '7px');
+                $('.info-img29').append('<img src="' + $Img29 + '" width=300 height=200 alt="">');
+                $('.info-img29').css('margin-left', '14px')
+                $('.info-img29').css('padding', '15px')
+                $('.info-img29').css('margin-right', '5px')
+                $('.title29').append('<a href="javascript:goToFinalURL()">' + $Title29 + '</a>');
+                $('.title29').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.title29').css('font-size', '30px');
+                $('.title29').css('padding', '7px');
+                $('.addr29').append($Addr29);
+                $('.addr29').css('font-family', "'Nanum Gothic', sans-serif");
+                $('.addr29').css('color', '#7a7a7a');
+                $('.addr29').css('font-size', '17px');
+                $('.addr29').css('padding-left', '7px');
+                $(".title0").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[0].contentid;
+                    var test2 = result.response.body.items.item[0].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;       //////// 지금은 콘텐츠 아이디만 이지만 나중에 장소name까지 &로 묶어서 2개 보내기.
+                    window.location.href = hr;             ////////그래야  db에 있는 크롤링한 정보를 찾음
+                });
+                $(".title1").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[1].contentid;
+                    var test2 = result.response.body.items.item[1].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title2").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[2].contentid;
+                    var test2 = result.response.body.items.item[2].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title3").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[3].contentid;
+                    var test2 = result.response.body.items.item[3].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title4").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[4].contentid;
+                    var test2 = result.response.body.items.item[4].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title5").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[5].contentid;
+                    var test2 = result.response.body.items.item[5].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title6").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[6].contentid;
+                    var test2 = result.response.body.items.item[6].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title7").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[7].contentid;
+                    var test2 = result.response.body.items.item[7].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title8").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[8].contentid;
+                    var test2 = result.response.body.items.item[8].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title9").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[9].contentid;
+                    var test2 = result.response.body.items.item[9].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title10").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[10].contentid;
+                    var test2 = result.response.body.items.item[10].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title11").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[11].contentid;
+                    var test2 = result.response.body.items.item[11].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title12").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[12].contentid;
+                    var test2 = result.response.body.items.item[12].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title13").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[13].contentid;
+                    var test2 = result.response.body.items.item[13].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title14").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[14].contentid;
+                    var test2 = result.response.body.items.item[14].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title15").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[15].contentid;
+                    var test2 = result.response.body.items.item[15].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title16").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[16].contentid;
+                    var test2 = result.response.body.items.item[16].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title17").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[17].contentid;
+                    var test2 = result.response.body.items.item[17].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title18").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[18].contentid;
+                    var test2 = result.response.body.items.item[18].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title19").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[19].contentid;
+                    var test2 = result.response.body.items.item[19].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title20").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[20].contentid;
+                    var test2 = result.response.body.items.item[20].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title21").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[21].contentid;
+                    var test2 = result.response.body.items.item[21].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title22").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[22].contentid;
+                    var test2 = result.response.body.items.item[22].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title23").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[23].contentid;
+                    var test2 = result.response.body.items.item[23].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title24").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[24].contentid;
+                    var test2 = result.response.body.items.item[24].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title25").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[25].contentid;
+                    var test2 = result.response.body.items.item[25].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title26").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[26].contentid;
+                    var test2 = result.response.body.items.item[26].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title27").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[27].contentid;
+                    var test2 = result.response.body.items.item[27].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title28").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[28].contentid;
+                    var test2 = result.response.body.items.item[28].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+                $(".title29").click(function goToFinalURL() {     //입력창 값 전달
+                    var test1 = result.response.body.items.item[29].contentid;
+                    var test2 = result.response.body.items.item[29].title;
+                    var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                    window.location.href = hr;
+                });
+            });  //alert(result.response.body.items.item[0].contentid);
+            //if(i=0, result.response.body.items.item[i], i++){}
+            $(".button-search").click(function () {     //입력창 값 전달
+                    var inputVal = $(".search-input").val();  //입력된값저장
+                    var inputValescape = encodeURI(inputVal);  //인코딩
+                    $.getJSON(
+                        'http://api.visitkorea.or.kr/openapi/service/rest/KorService/searchKeyword?ServiceKey=6YaWFbmIjrHFjffRP7kOiUmCPVNpcUny7t6%2BV1GPx4Zh72Bz1fLFzTy9WV2a5LmpgMsVLjPBJdjvli7vSxvnyg%3D%3D&keyword=' + inputValescape + '&arrange=B&pageNo=1&numOfRows=35&MobileOS=ETC&MobileApp=AppTesting',
+                        function (result) {
+                            $('.info-img0').empty();
+                            $('.title0').empty();
+                            $('.addr0').empty();
+                            $('.info-img1').empty();
+                            $('.title1').empty();
+                            $('.addr1').empty();
+                            $('.info-img2').empty();
+                            $('.title2').empty();
+                            $('.addr2').empty();
+                            $('.info-img3').empty();
+                            $('.title3').empty();
+                            $('.addr3').empty();
+                            $('.info-img4').empty();
+                            $('.title4').empty();
+                            $('.addr4').empty();
+                            $('.info-img5').empty();
+                            $('.title5').empty();
+                            $('.addr5').empty();
+                            $('.info-img6').empty();
+                            $('.title6').empty();
+                            $('.addr6').empty();
+                            $('.info-img7').empty();
+                            $('.title7').empty();
+                            $('.addr7').empty();
+                            $('.info-img8').empty();
+                            $('.title8').empty();
+                            $('.addr8').empty();
+                            $('.info-img9').empty();
+                            $('.title9').empty();
+                            $('.addr9').empty();
+                            $('.info-img10').empty();
+                            $('.title10').empty();
+                            $('.addr10').empty();
+                            $('.info-img11').empty();
+                            $('.title11').empty();
+                            $('.addr11').empty();
+                            $('.info-img12').empty();
+                            $('.title12').empty();
+                            $('.addr12').empty();
+                            $('.info-img13').empty();
+                            $('.title13').empty();
+                            $('.addr13').empty();
+                            $('.info-img14').empty();
+                            $('.title14').empty();
+                            $('.addr14').empty();
+                            $('.info-img15').empty();
+                            $('.title15').empty();
+                            $('.addr15').empty();
+                            $('.info-img16').empty();
+                            $('.title16').empty();
+                            $('.addr16').empty();
+                            $('.info-img17').empty();
+                            $('.title17').empty();
+                            $('.addr17').empty();
+                            $('.info-img18').empty();
+                            $('.title18').empty();
+                            $('.addr18').empty();
+                            $('.info-img19').empty();
+                            $('.title19').empty();
+                            $('.addr19').empty();
+                            $('.info-img20').empty();
+                            $('.title20').empty();
+                            $('.addr20').empty();
+                            $('.info-img21').empty();
+                            $('.title21').empty();
+                            $('.addr21').empty();
+                            $('.info-img22').empty();
+                            $('.title22').empty();
+                            $('.addr22').empty();
+                            $('.info-img23').empty();
+                            $('.title23').empty();
+                            $('.addr23').empty();
+                            $('.info-img24').empty();
+                            $('.title24').empty();
+                            $('.addr24').empty();
+                            $('.info-img25').empty();
+                            $('.title25').empty();
+                            $('.addr25').empty();
+                            $('.info-img26').empty();
+                            $('.title26').empty();
+                            $('.addr26').empty();
+                            $('.info-img27').empty();
+                            $('.title27').empty();
+                            $('.addr27').empty();
+                            $('.info-img28').empty();
+                            $('.title28').empty();
+                            $('.addr28').empty();
+                            $('.info-img29').empty();
+                            $('.title29').empty();
+                            $('.addr29').empty();
+                            var $Img0 = result.response.body.items.item[0].firstimage;
+                            var $Title0 = result.response.body.items.item[0].title;
+                            var $Addr0 = result.response.body.items.item[0].addr1 + result.response.body.items.item[0].addr2;
+                            var $Img1 = result.response.body.items.item[1].firstimage;
+                            var $Title1 = result.response.body.items.item[1].title;
+                            var $Addr1 = result.response.body.items.item[1].addr1 + result.response.body.items.item[1].addr2;
+                            var $Img2 = result.response.body.items.item[2].firstimage;
+                            var $Title2 = result.response.body.items.item[2].title;
+                            var $Addr2 = result.response.body.items.item[2].addr1 + result.response.body.items.item[2].addr2;
+                            var $Img3 = result.response.body.items.item[3].firstimage;
+                            var $Title3 = result.response.body.items.item[3].title;
+                            var $Addr3 = result.response.body.items.item[3].addr1 + result.response.body.items.item[3].addr2;
+                            var $Img4 = result.response.body.items.item[4].firstimage;
+                            var $Title4 = result.response.body.items.item[4].title;
+                            var $Addr4 = result.response.body.items.item[4].addr1 + result.response.body.items.item[4].addr2;
+                            var $Img5 = result.response.body.items.item[5].firstimage;
+                            var $Title5 = result.response.body.items.item[5].title;
+                            var $Addr5 = result.response.body.items.item[5].addr1 + result.response.body.items.item[5].addr2;
+                            var $Img6 = result.response.body.items.item[6].firstimage;
+                            var $Title6 = result.response.body.items.item[6].title;
+                            var $Addr6 = result.response.body.items.item[6].addr1 + result.response.body.items.item[6].addr2;
+                            var $Img7 = result.response.body.items.item[7].firstimage;
+                            var $Title7 = result.response.body.items.item[7].title;
+                            var $Addr7 = result.response.body.items.item[7].addr1 + result.response.body.items.item[7].addr2;
+                            var $Img8 = result.response.body.items.item[8].firstimage;
+                            var $Title8 = result.response.body.items.item[8].title;
+                            var $Addr8 = result.response.body.items.item[8].addr1 + result.response.body.items.item[8].addr2;
+                            var $Img9 = result.response.body.items.item[9].firstimage;
+                            var $Title9 = result.response.body.items.item[9].title;
+                            var $Addr9 = result.response.body.items.item[9].addr1 + result.response.body.items.item[9].addr2;
+                            var $Img10 = result.response.body.items.item[10].firstimage;
+                            var $Title10 = result.response.body.items.item[10].title;
+                            var $Addr10 = result.response.body.items.item[10].addr1 + result.response.body.items.item[10].addr2;
+                            var $Img11 = result.response.body.items.item[11].firstimage;
+                            var $Title11 = result.response.body.items.item[11].title;
+                            var $Addr11 = result.response.body.items.item[11].addr1 + result.response.body.items.item[11].addr2;
+                            var $Img12 = result.response.body.items.item[12].firstimage;
+                            var $Title12 = result.response.body.items.item[12].title;
+                            var $Addr12 = result.response.body.items.item[12].addr1 + result.response.body.items.item[12].addr2;
+                            var $Img13 = result.response.body.items.item[13].firstimage;
+                            var $Title13 = result.response.body.items.item[13].title;
+                            var $Addr13 = result.response.body.items.item[13].addr1 + result.response.body.items.item[13].addr2;
+                            var $Img14 = result.response.body.items.item[14].firstimage;
+                            var $Title14 = result.response.body.items.item[14].title;
+                            var $Addr14 = result.response.body.items.item[14].addr1 + result.response.body.items.item[14].addr2;
+                            var $Img15 = result.response.body.items.item[15].firstimage;
+                            var $Title15 = result.response.body.items.item[15].title;
+                            var $Addr15 = result.response.body.items.item[15].addr1 + result.response.body.items.item[15].addr2;
+                            var $Img16 = result.response.body.items.item[16].firstimage;
+                            var $Title16 = result.response.body.items.item[16].title;
+                            var $Addr16 = result.response.body.items.item[16].addr1 + result.response.body.items.item[16].addr2;
+                            var $Img17 = result.response.body.items.item[17].firstimage;
+                            var $Title17 = result.response.body.items.item[17].title;
+                            var $Addr17 = result.response.body.items.item[17].addr1 + result.response.body.items.item[17].addr2;
+                            var $Img18 = result.response.body.items.item[18].firstimage;
+                            var $Title18 = result.response.body.items.item[18].title;
+                            var $Addr18 = result.response.body.items.item[18].addr1 + result.response.body.items.item[18].addr2;
+                            var $Img19 = result.response.body.items.item[19].firstimage;
+                            var $Title19 = result.response.body.items.item[19].title;
+                            var $Addr19 = result.response.body.items.item[19].addr1 + result.response.body.items.item[19].addr2;
+                            var $Img20 = result.response.body.items.item[20].firstimage;
+                            var $Title20 = result.response.body.items.item[20].title;
+                            var $Addr20 = result.response.body.items.item[20].addr1 + result.response.body.items.item[20].addr2;
+                            var $Img21 = result.response.body.items.item[21].firstimage;
+                            var $Title21 = result.response.body.items.item[21].title;
+                            var $Addr21 = result.response.body.items.item[21].addr1 + result.response.body.items.item[21].addr2;
+                            var $Img22 = result.response.body.items.item[22].firstimage;
+                            var $Title22 = result.response.body.items.item[22].title;
+                            var $Addr22 = result.response.body.items.item[22].addr1 + result.response.body.items.item[22].addr2;
+                            var $Img23 = result.response.body.items.item[23].firstimage;
+                            var $Title23 = result.response.body.items.item[23].title;
+                            var $Addr23 = result.response.body.items.item[23].addr1 + result.response.body.items.item[23].addr2;
+                            var $Img24 = result.response.body.items.item[24].firstimage;
+                            var $Title24 = result.response.body.items.item[24].title;
+                            var $Addr24 = result.response.body.items.item[24].addr1 + result.response.body.items.item[24].addr2;
+                            var $Img25 = result.response.body.items.item[25].firstimage;
+                            var $Title25 = result.response.body.items.item[25].title;
+                            var $Addr25 = result.response.body.items.item[25].addr1 + result.response.body.items.item[25].addr2;
+                            var $Img26 = result.response.body.items.item[26].firstimage;
+                            var $Title26 = result.response.body.items.item[26].title;
+                            var $Addr26 = result.response.body.items.item[26].addr1 + result.response.body.items.item[26].addr2;
+                            var $Img27 = result.response.body.items.item[27].firstimage;
+                            var $Title27 = result.response.body.items.item[27].title;
+                            var $Addr27 = result.response.body.items.item[27].addr1 + result.response.body.items.item[27].addr2;
+                            var $Img28 = result.response.body.items.item[28].firstimage;
+                            var $Title28 = result.response.body.items.item[28].title;
+                            var $Addr28 = result.response.body.items.item[28].addr1 + result.response.body.items.item[28].addr2;
+                            var $Img29 = result.response.body.items.item[29].firstimage;
+                            var $Title29 = result.response.body.items.item[29].title;
+                            var $Addr29 = result.response.body.items.item[29].addr1 + result.response.body.items.item[29].addr2;
+                            $('.info-img0').append('<img src="' + $Img0 + '" width=300 height=200 alt="">');
+                            $('.title0').append('<a href="javascript:goToFinalURL()">' + $Title0 + '</a>');
+                            $('.addr0').append($Addr0);
+                            $('.info-img1').append('<img src="' + $Img1 + '" width=300 height=200 alt="">');
+                            $('.title1').append('<a href="javascript:goToFinalURL()">' + $Title1 + '</a>');
+                            $('.addr1').append($Addr1);
+                            $('.info-img2').append('<img src="' + $Img2 + '" width=300 height=200 alt="">');
+                            $('.title2').append('<a href="javascript:goToFinalURL()">' + $Title2 + '</a>');
+                            $('.addr2').append($Addr2);
+                            $('.info-img3').append('<img src="' + $Img3 + '" width=300 height=200 alt="">');
+                            $('.title3').append('<a href="javascript:goToFinalURL()">' + $Title3 + '</a>');
+                            $('.addr3').append($Addr3);
+                            $('.info-img4').append('<img src="' + $Img4 + '" width=300 height=200 alt="">');
+                            $('.title4').append('<a href="javascript:goToFinalURL()">' + $Title4 + '</a>');
+                            $('.addr4').append($Addr4);
+                            $('.info-img5').append('<img src="' + $Img5 + '" width=300 height=200 alt="">');
+                            $('.title5').append('<a href="javascript:goToFinalURL()">' + $Title5 + '</a>');
+                            $('.addr5').append($Addr5);
+                            $('.info-img6').append('<img src="' + $Img6 + '" width=300 height=200 alt="">');
+                            $('.title6').append('<a href="javascript:goToFinalURL()">' + $Title6 + '</a>');
+                            $('.addr6').append($Addr6);
+                            $('.info-img7').append('<img src="' + $Img7 + '" width=300 height=200 alt="">');
+                            $('.title7').append('<a href="javascript:goToFinalURL()">' + $Title7 + '</a>');
+                            $('.addr7').append($Addr7);
+                            $('.info-img8').append('<img src="' + $Img8 + '" width=300 height=200 alt="">');
+                            $('.title8').append('<a href="javascript:goToFinalURL()">' + $Title8 + '</a>');
+                            $('.addr8').append($Addr8);
+                            $('.info-img9').append('<img src="' + $Img9 + '" width=300 height=200 alt="">');
+                            $('.title9').append('<a href="javascript:goToFinalURL()">' + $Title9 + '</a>');
+                            $('.addr9').append($Addr9);
+                            $('.info-img10').append('<img src="' + $Img10 + '" width=300 height=200 alt="">');
+                            $('.title10').append('<a href="javascript:goToFinalURL()">' + $Title10 + '</a>');
+                            $('.addr10').append($Addr10);
+                            $('.info-img11').append('<img src="' + $Img11 + '" width=300 height=200 alt="">');
+                            $('.title11').append('<a href="javascript:goToFinalURL()">' + $Title11 + '</a>');
+                            $('.addr11').append($Addr11);
+                            $('.info-img12').append('<img src="' + $Img12 + '" width=300 height=200 alt="">');
+                            $('.title12').append('<a href="javascript:goToFinalURL()">' + $Title12 + '</a>');
+                            $('.addr12').append($Addr12);
+                            $('.info-img13').append('<img src="' + $Img13 + '" width=300 height=200 alt="">');
+                            $('.title13').append('<a href="javascript:goToFinalURL()">' + $Title13 + '</a>');
+                            $('.addr13').append($Addr13);
+                            $('.info-img14').append('<img src="' + $Img14 + '" width=300 height=200 alt="">');
+                            $('.title14').append('<a href="javascript:goToFinalURL()">' + $Title14 + '</a>');
+                            $('.addr14').append($Addr14);
+                            $('.info-img15').append('<img src="' + $Img15 + '" width=300 height=200 alt="">');
+                            $('.title15').append('<a href="javascript:goToFinalURL()">' + $Title15 + '</a>');
+                            $('.addr15').append($Addr15);
+                            $('.info-img16').append('<img src="' + $Img16 + '" width=300 height=200 alt="">');
+                            $('.title16').append('<a href="javascript:goToFinalURL()">' + $Title16 + '</a>');
+                            $('.addr16').append($Addr16);
+                            $('.info-img17').append('<img src="' + $Img17 + '" width=300 height=200 alt="">');
+                            $('.title17').append('<a href="javascript:goToFinalURL()">' + $Title17 + '</a>');
+                            $('.addr17').append($Addr17);
+                            $('.info-img18').append('<img src="' + $Img18 + '" width=300 height=200 alt="">');
+                            $('.title18').append('<a href="javascript:goToFinalURL()">' + $Title18 + '</a>');
+                            $('.addr18').append($Addr18);
+                            $('.info-img19').append('<img src="' + $Img19 + '" width=300 height=200 alt="">');
+                            $('.title19').append('<a href="javascript:goToFinalURL()">' + $Title19 + '</a>');
+                            $('.addr19').append($Addr19);
+                            $('.info-img20').append('<img src="' + $Img20 + '" width=300 height=200 alt="">');
+                            $('.title20').append('<a href="javascript:goToFinalURL()">' + $Title20 + '</a>');
+                            $('.addr20').append($Addr20);
+                            $('.info-img21').append('<img src="' + $Img21 + '" width=300 height=200 alt="">');
+                            $('.title21').append('<a href="javascript:goToFinalURL()">' + $Title21 + '</a>');
+                            $('.addr21').append($Addr21);
+                            $('.info-img22').append('<img src="' + $Img22 + '" width=300 height=200 alt="">');
+                            $('.title22').append('<a href="javascript:goToFinalURL()">' + $Title22 + '</a>');
+                            $('.addr22').append($Addr22);
+                            $('.info-img23').append('<img src="' + $Img23 + '" width=300 height=200 alt="">');
+                            $('.title23').append('<a href="javascript:goToFinalURL()">' + $Title23 + '</a>');
+                            $('.addr23').append($Addr23);
+                            $('.info-img24').append('<img src="' + $Img24 + '" width=300 height=200 alt="">');
+                            $('.title24').append('<a href="javascript:goToFinalURL()">' + $Title24 + '</a>');
+                            $('.addr24').append($Addr24);
+                            $('.info-img25').append('<img src="' + $Img25 + '" width=300 height=200 alt="">');
+                            $('.title25').append('<a href="javascript:goToFinalURL()">' + $Title25 + '</a>');
+                            $('.addr25').append($Addr25);
+                            $('.info-img26').append('<img src="' + $Img26 + '" width=300 height=200 alt="">');
+                            $('.title26').append('<a href="javascript:goToFinalURL()">' + $Title26 + '</a>');
+                            $('.addr26').append($Addr26);
+                            $('.info-img27').append('<img src="' + $Img27 + '" width=300 height=200 alt="">');
+                            $('.title27').append('<a href="javascript:goToFinalURL()">' + $Title27 + '</a>');
+                            $('.addr27').append($Addr27);
+                            $('.info-img28').append('<img src="' + $Img28 + '" width=300 height=200 alt="">');
+                            $('.title28').append('<a href="javascript:goToFinalURL()">' + $Title28 + '</a>');
+                            $('.addr28').append($Addr28);
+                            $('.info-img29').append('<img src="' + $Img29 + '" width=300 height=200 alt="">');
+                            $('.title29').append('<a href="javascript:goToFinalURL()">' + $Title29 + '</a>');
+                            $('.addr29').append($Addr29);
+                            $(".title0").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[0].contentid;    //////// 지금은 콘텐츠 아이디만 이지만 나중에 장소name까지 &로 묶어서 2개 보내기.
+                                var test2 = result.response.body.items.item[0].title;        ////////그래야  db에 있는 크롤링한 정보를 찾음
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;      
+                                window.location.href = hr;            
+                            });
+                            $(".title1").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[1].contentid;
+                                var test2 = result.response.body.items.item[1].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title2").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[2].contentid;
+                                var test2 = result.response.body.items.item[2].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title3").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[3].contentid;
+                                var test2 = result.response.body.items.item[3].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title4").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[4].contentid;
+                                var test2 = result.response.body.items.item[4].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title5").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[5].contentid;
+                                var test2 = result.response.body.items.item[5].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title6").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[6].contentid;
+                                var test2 = result.response.body.items.item[6].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title7").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[7].contentid;
+                                var test2 = result.response.body.items.item[7].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title8").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[8].contentid;
+                                var test2 = result.response.body.items.item[8].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title9").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[9].contentid;
+                                var test2 = result.response.body.items.item[9].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title10").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[10].contentid;
+                                var test2 = result.response.body.items.item[10].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title11").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[11].contentid;
+                                var test2 = result.response.body.items.item[11].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title12").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[12].contentid;
+                                var test2 = result.response.body.items.item[12].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title13").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[13].contentid;
+                                var test2 = result.response.body.items.item[13].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title14").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[14].contentid;
+                                var test2 = result.response.body.items.item[14].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title15").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[15].contentid;
+                                var test2 = result.response.body.items.item[15].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title16").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[16].contentid;
+                                var test2 = result.response.body.items.item[16].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title17").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[17].contentid;
+                                var test2 = result.response.body.items.item[17].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title18").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[18].contentid;
+                                var test2 = result.response.body.items.item[18].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title19").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[19].contentid;
+                                var test2 = result.response.body.items.item[19].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title20").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[20].contentid;
+                                var test2 = result.response.body.items.item[20].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title21").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[21].contentid;
+                                var test2 = result.response.body.items.item[21].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title22").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[22].contentid;
+                                var test2 = result.response.body.items.item[22].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title23").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[23].contentid;
+                                var test2 = result.response.body.items.item[23].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title24").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[24].contentid;
+                                var test2 = result.response.body.items.item[24].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title25").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[25].contentid;
+                                var test2 = result.response.body.items.item[25].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title26").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[26].contentid;
+                                var test2 = result.response.body.items.item[26].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title27").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[27].contentid;
+                                var test2 = result.response.body.items.item[27].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title28").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[28].contentid;
+                                var test2 = result.response.body.items.item[28].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2;
+                                window.location.href = hr;
+                            });
+                            $(".title29").click(function goToFinalURL() {     //입력창 값 전달
+                                var test1 = result.response.body.items.item[29].contentid;
+                                var test2 = result.response.body.items.item[29].title;
+                                var hr = 'search' + '?test=' + test1+'&'+'title='+test2; 
+                                window.location.href = hr;
+                            });
+                        });
+                });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                

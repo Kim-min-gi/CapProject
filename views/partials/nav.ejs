@@ -1,0 +1,23 @@
+<!-- views/partials/nav.ejs -->
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+  <div class="container">
+    <div class="navbar-brand">유저 게시판</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="/" class="nav-link">메인 페이지로</a></li>
+        <li class="nav-item"><a href="/posts" class="nav-link">게시판&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li> <!-- 1 -->
+        <% if(user) { %>
+         <li class="nav-item"><a class="nav-link"><%=user%>&emsp;/</a></li>    <!-- 나중에 아이디 상세페이지 만들어 연결하기? -->
+         <li class="nav-item"><a href="/logout" class="nav-link">로그아웃 </a></li>
+          <% } else{ %>
+        <li class="nav-item"><a href="/login" class="nav-link">로그인</a></li>
+        <li class="nav-item"><a href="/signup" class="nav-link">회원가입</a></li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

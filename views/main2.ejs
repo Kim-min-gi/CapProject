@@ -1,0 +1,84 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="/css/main2.css">
+  
+  </head>
+  
+  <body>
+    <nav>
+    <ul>
+    <!-- 로그인 -->
+    <li><a href="/login">로그인</a></li>
+  
+    <!-- 회원가입 -->
+    <li><a href="/signup">회원가입</a></li>
+    <li><a href="/posts">게시판</a></li>
+  
+  </ul>
+  </nav>
+  
+  <style>
+  #content {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  #content > #main_section {
+    width: 1000px;
+    float: left;
+    border: none;
+  }
+  
+    #main_section > article.main_article {
+      margin-bottom: 100px;
+      padding: 30px;
+      border: 3px solid black;
+    }
+  </style>
+  
+  
+  <form action="/listsearch" method="get">
+  <div class="container">
+    <div class="search-group">
+      <input class="search-input inactive" type="text" name="search" placeholder="검색어를 입력해주세요.">
+      <button type="submit" class="button button-brand-primary button-search">Search</button>
+    </div>
+  </div>
+</form>
+  
+  
+  
+          <div id="content">
+          <section id="main_section">
+  
+            <!--관광지 사진-->
+            <article class="main_article">
+   <h1>관광지 사진</h1>
+    </article>
+  
+            <article class="main_article">
+              <!--게시판 부분-->
+              <h2>게시판 바로가기</h2>
+            </article>
+  
+            <!--최신 게시글-->
+            <article class="main_article">
+              <h1>최신 게시글</h1>
+              <li> 게시글 출력 </li>
+              <li> 게시글 출력 </li>
+              <li> 게시글 출력 </li>
+            </article>
+  
+            <!--리뷰 바로가기-->
+            <article class="main_article">
+              <h1>리뷰</h1>
+            </article>
+          </section>
+          </div>
+  
+  
+  
+  
+  </body></html>

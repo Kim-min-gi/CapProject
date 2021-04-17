@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>main</title>
+
+    <!--
+Sentra Template
+https://templatemo.com/tm-518-sentra
+-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--/.navbar-header-->
+        <div id="main-nav" class="collapse navbar-collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#review">Latest Review</a></li>
+                    <li><a href="/posts">board</a></li>
+                    <li><a href="#recommend">Recommend</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <a href="#">capstone<em>design 1</em></a>
+        </div>
+
+        <nav>
+            <ul>
+                <% if(user) { %>
+
+                    <li>
+                   <a> <%=user%> </a> &emsp;/&emsp;
+                    <a href="/logout">
+                        로그아웃 
+                    </a>
+                </li>
+               
+                    <% } else{ %>
+                <li>
+                    <a href="/login">
+                        Login &emsp;/&emsp;
+                    </a>
+                    <a href="/signup">
+                         Sign Up
+                    </a>
+                </li>
+                <% } %>
+                <li>
+                    <a href="#top">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#review">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        최신 리뷰
+                    </a>
+                </li>
+                <li>
+                    <a href="/posts">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        게시판
+                    </a>
+                </li>
+                <li>
+                    <a href="#recommend">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        추천
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="search-box">
+            <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+            <form action="/listsearch" class="search-form">
+                <input type="text" placeholder="검색어를 입력해주세요." id="search" name="search" autocomplete="off">
+            </form>
+            <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+        </div>
+    </div>
+
+    <div class="slider">
+
+
+        <div class="Modern-Slider content-section" id="top">
+            <!-- Item -->
+            <div class="item item-1">
+                <div class="img-fill">
+                    <div class="image"></div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-2">
+                <div class="img-fill">
+                    <div class="image"></div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-3">
+                <div class="img-fill">
+                    <div class="image"></div>
+                </div>
+            </div>
+            <!-- // Item -->
+        </div>
+    </div>
+
+    <div class="page-content">
+
+        <section id="review" class="content-section">
+            <div class="section-heading">
+                <h1>Latest Review</h1>
+            </div>
+            <div class="section-content">
+                <div class="tabs-content">
+                    <div class="wrapper">
+                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                            <li><a href="#tab1" class="active">July 2018</a></li>
+                            <li><a href="#tab2">June 2018</a></li>
+                            <li><a href="#tab3">May 2018</a></li>
+                            <li><a href="#tab4">April 2018</a></li>
+                        </ul>
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Integer ultrices augue</h4>
+                                                <span>25 July 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>16 July 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Sed at massa turpis</h4>
+                                                <span>10 July 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Sed at massa turpis</h4>
+                                                <span>30 June 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <span>24 June 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>12 June 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab3">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>26 May 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <span>22 May 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Integer ultrices augue</h4>
+                                                <span>8 May 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab4">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_1.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <span>26 April 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_3.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Integer ultrices augue eu</h4>
+                                                <span>24 April 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/blog_2.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cras commodo odio ut</h4>
+                                                <span>20 April 2018</span>
+                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
+                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                    maximus finibus.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommend" class="content-section">
+            <div class="section-heading">
+                <h1>추천 관광지</h1>
+            </div>
+            <div class="section-content">
+                <div class="tabs-content">
+                    <div class="wrapper">
+                        <section id="group" class="tabgroup">
+                            <div id="tab">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img0"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title0"></h4>
+                                                <span class="re-addr0"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img1"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title1"></h4>
+                                                <span class="re-addr1"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img2"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title2"></h4>
+                                                <span class="re-addr2"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img3"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title3"></h4>
+                                                <span class="re-addr3"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img4"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title4"></h4>
+                                                <span class="re-addr4"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img5"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title5"></h4>
+                                                <span class="re-addr5"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img6"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title6"></h4>
+                                                <span class="re-addr6"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img7"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title7"></h4>
+                                                <span class="re-addr7"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img8"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title8"></h4>
+                                                <span class="re-addr8"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#">★</a>
+                                                    <a href="#">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="re-img9"></div>
+                                            <div class="text-content">
+                                                <h4 class="re-title9"></h4>
+                                                <span class="re-addr9"></span>
+                                                <p class="star_rating">
+                                                    <a href="#" class="on">&nbsp;★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#" class="on">★</a>
+                                                    <a href="#">★</a>
+                                                    <a href="#">★</a>
+                                                </p>
+                                                <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+
+        <section class="footer">
+            <p>Copyright &copy; 2019 Company Name
+
+                . Design: TemplateMo</p>
+        </section>
+    </div>
+
+
+    <script>
+        $.getJSON(
+            'http://api.visitkorea.or.kr/openapi/service/rest/KorService/searchKeyword?ServiceKey=6YaWFbmIjrHFjffRP7kOiUmCPVNpcUny7t6%2BV1GPx4Zh72Bz1fLFzTy9WV2a5LmpgMsVLjPBJdjvli7vSxvnyg%3D%3D&keyword=%EC%BD%94%EC%8A%A4&arrange=B&pageNo=1&numOfRows=35&MobileOS=ETC&MobileApp=AppTesting',
+            function (result) {
+                var $Imgre0 = result.response.body.items.item[0].firstimage;
+                var $Titlere0 = result.response.body.items.item[0].title;
+                var $Addrre0 = result.response.body.items.item[0].addr1;
+                var $Imgre1 = result.response.body.items.item[1].firstimage;
+                var $Titlere1 = result.response.body.items.item[1].title;
+                var $Addrre1 = result.response.body.items.item[1].addr1;
+                var $Imgre2 = result.response.body.items.item[2].firstimage;
+                var $Titlere2 = result.response.body.items.item[2].title;
+                var $Addrre2 = result.response.body.items.item[2].addr1;
+                var $Imgre3 = result.response.body.items.item[3].firstimage;
+                var $Titlere3 = result.response.body.items.item[3].title;
+                var $Addrre3 = result.response.body.items.item[3].addr1;
+                var $Imgre4 = result.response.body.items.item[4].firstimage;
+                var $Titlere4 = result.response.body.items.item[4].title;
+                var $Addrre4 = result.response.body.items.item[4].addr1;
+                var $Imgre5 = result.response.body.items.item[5].firstimage;
+                var $Titlere5 = result.response.body.items.item[5].title;
+                var $Addrre5 = result.response.body.items.item[5].addr1;
+                var $Imgre6 = result.response.body.items.item[6].firstimage;
+                var $Titlere6 = result.response.body.items.item[6].title;
+                var $Addrre6 = result.response.body.items.item[6].addr1;
+                var $Imgre7 = result.response.body.items.item[7].firstimage;
+                var $Titlere7 = result.response.body.items.item[7].title;
+                var $Addrre7 = result.response.body.items.item[7].addr1;
+                var $Imgre8 = result.response.body.items.item[8].firstimage;
+                var $Titlere8 = result.response.body.items.item[8].title;
+                var $Addrre8 = result.response.body.items.item[8].addr1;
+                var $Imgre9 = result.response.body.items.item[9].firstimage;
+                var $Titlere9 = result.response.body.items.item[9].title;
+                var $Addrre9 = result.response.body.items.item[9].addr1;
+                var $Imgre10 = result.response.body.items.item[10].firstimage;
+                var $Titlere10 = result.response.body.items.item[10].title;
+                var $Addrre10 = result.response.body.items.item[10].addr1;
+                $('.re-img0').append('<img src="' + $Imgre0 + '" width=306 height=230 alt="">');
+                $('.re-title0').append($Titlere0);
+                $('.re-addr0').append($Addrre0);
+                $('.re-title0').css('margin-bottom', '15px');
+                $('.re-title0').css('padding-top', '30px');
+                $('.re-title0').css('font-size', '28px');
+                $('.re-addr0').css('padding', '5px');
+                $('.re-addr0').css('font-size', '17px');
+                $('.re-addr0').css('font-weight', '550');
+                
+                $('.re-img1').append('<img src="' + $Imgre1 + '" width=306 height=230 alt="">');
+                $('.re-title1').append($Titlere1);
+                $('.re-addr1').append($Addrre1);
+                $('.re-title1').css('margin-bottom', '15px');
+                $('.re-title1').css('padding-top', '30px');
+                $('.re-title1').css('font-size', '28px');
+                $('.re-addr1').css('padding', '5px');
+                $('.re-addr1').css('font-size', '17px');
+                $('.re-addr1').css('font-weight', '550');
+                $('.re-img2').append('<img src="' + $Imgre2 + '" width=306 height=230 alt="">');
+                $('.re-title2').append($Titlere2);
+                $('.re-addr2').append($Addrre2);
+                $('.re-title2').css('margin-bottom', '15px');
+                $('.re-title2').css('padding-top', '30px');
+                $('.re-title2').css('font-size', '28px');
+                $('.re-addr2').css('padding', '5px');
+                $('.re-addr2').css('font-size', '17px');
+                $('.re-addr2').css('font-weight', '550');
+                $('.re-img3').append('<img src="' + $Imgre3 + '" width=306 height=230 alt="">');
+                $('.re-title3').append($Titlere3);
+                $('.re-addr3').append($Addrre3);
+                $('.re-title3').css('margin-bottom', '15px');
+                $('.re-title3').css('padding-top', '30px');
+                $('.re-title3').css('font-size', '28px');
+                $('.re-addr3').css('padding', '5px');
+                $('.re-addr3').css('font-size', '17px');
+                $('.re-addr3').css('font-weight', '550');
+                $('.re-img4').append('<img src="' + $Imgre10 + '" width=306 height=230 alt="">');
+                $('.re-title4').append($Titlere10);
+                $('.re-addr4').append($Addrre10);
+                $('.re-title4').css('margin-bottom', '15px');
+                $('.re-title4').css('padding-top', '30px');
+                $('.re-title4').css('font-size', '28px');
+                $('.re-addr4').css('padding', '5px');
+                $('.re-addr4').css('font-size', '17px');
+                $('.re-addr4').css('font-weight', '550');
+                $('.re-img5').append('<img src="' + $Imgre5 + '" width=306 height=230 alt="">');
+                $('.re-title5').append($Titlere5);
+                $('.re-addr5').append($Addrre5);
+                $('.re-title5').css('margin-bottom', '15px');
+                $('.re-title5').css('padding-top', '30px');
+                $('.re-title5').css('font-size', '28px');
+                $('.re-addr5').css('padding', '5px');
+                $('.re-addr5').css('font-size', '17px');
+                $('.re-addr5').css('font-weight', '550');
+                $('.re-img6').append('<img src="' + $Imgre6 + '" width=306 height=230 alt="">');
+                $('.re-title6').append($Titlere6);
+                $('.re-addr6').append($Addrre6);
+                $('.re-title6').css('margin-bottom', '15px');
+                $('.re-title6').css('padding-top', '30px');
+                $('.re-title6').css('font-size', '28px');
+                $('.re-addr6').css('padding', '5px');
+                $('.re-addr6').css('font-size', '17px');
+                $('.re-addr6').css('font-weight', '550');
+                $('.re-img7').append('<img src="' + $Imgre7 + '" width=306 height=230 alt="">');
+                $('.re-title7').append($Titlere7);
+                $('.re-addr7').append($Addrre7);
+                $('.re-title7').css('margin-bottom', '15px');
+                $('.re-title7').css('padding-top', '30px');
+                $('.re-title7').css('font-size', '28px');
+                $('.re-addr7').css('padding', '5px');
+                $('.re-addr7').css('font-size', '17px');
+                $('.re-addr7').css('font-weight', '550');
+                $('.re-img8').append('<img src="' + $Imgre8 + '" width=306 height=230 alt="">');
+                $('.re-title8').append($Titlere8);
+                $('.re-addr8').append($Addrre8);
+                $('.re-title8').css('margin-bottom', '15px');
+                $('.re-title8').css('padding-top', '30px');
+                $('.re-title8').css('font-size', '28px');
+                $('.re-addr8').css('padding', '5px');
+                $('.re-addr8').css('font-size', '17px');
+                $('.re-addr8').css('font-weight', '550');
+                $('.re-img9').append('<img src="' + $Imgre9 + '" width=306 height=230 alt="">');
+                $('.re-title9').append($Titlere9);
+                $('.re-addr9').append($Addrre9);
+                $('.re-title9').css('margin-bottom', '15px');
+                $('.re-title9').css('padding-top', '30px');
+                $('.re-title9').css('font-size', '28px');
+                $('.re-addr9').css('padding', '5px');
+                $('.re-addr9').css('font-size', '17px');
+                $('.re-addr9').css('font-weight', '550');
+            });
+    </script>
+
+    <script>       
+         $( ".star_rating a" ).click(function() {
+            $(this).parent().children("a").removeClass("on");
+            $(this).addClass("on").prevAll("a").addClass("on");
+            return false;
+            });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <script src="https://kit.fontawesome.com/8c58089f6a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/signup.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      let emCk =0;
+      let idck = 0;
+
+            $(function(){
+              $("#userid").keyup(function(){
+                
+                    idCheck();
+              });
+              $("#userPw").keyup(function(){
+                    pwCheck();
+              });
+              $("#checkPw").keyup(function(){
+                    checkpwsame();
+              });
+              $("#emailSel").change(function(){
+                    emailSelect();
+              });
+              $("#apply").click(function(){
+
+               /*  if(confirm("회원가입을 하시겠습니까?")){    //회원가입
+                        if(idck==0){
+                        alert('아이디 중복체크를 해주세요');
+                            return false;
+                         }else{
+                        alert("회원가입을 축하합니다");
+                         $("#frm").submit();
+                            } 
+                        }*/
+                    userinfo();
+
+              });
+              $("#pw1").mousedown(function(){
+                    hidepw1();
+                    $("#pw1").addClass("far fa-eye").removeClass("fas fa-eye-slash");
+              }).mouseup(function(){
+                  showpw1();
+                  $("#pw1").addClass("fas fa-dyd-slash").removeClass("far fa-eye");
+              })
+              $("#pw2").mousedown(function() {
+                    hidepw2();
+                    $("#pw2").addClass("far fa-eye").removeClass("fas fa-eye-slash");
+                }).mouseup(function() {
+                      showpw2();
+                      $("#pw2").addClass("fas fa-eye-slash").removeClass("far fa-eye");
+                    })
+                });
+                function idCheck(){
+                    var id=$("#userid").val();
+                    if(id.length==0) {
+                        $("#idResult").css("color", "red").text("아이디는 필수입니다.");
+                  } else if(id.length<4 || id.length>10) {
+                      $("#idResult").css("color", "red").text("아이디의 길이가 맞지않습니다.");
+                  } else if(id.length>=4 && id.length<=10) {
+                      $("#idResult").css("color", "green").text("OK");
+                  }
+                }
+                function pwCheck(){
+                    var pw=$("#userPw").val();
+                    if(pw.length==0){
+                        $("#pwResult").css("color", "red").text("비밀번호는 필수입니다.");
+                    } else if(pw.length<8 || pw.length>16){
+                        $("#pwResult").css("color", "red").text("비밀번호의 길이가 맞지않습니다.");
+                    } else if(pw.length>=8 && pw.length<=16){
+                        $("#pwResult").css("color", "green").text("OK");
+                    }
+                }
+                function checkpwsame() {
+                      var userpw=$("#userPw").val();
+                      var checkpw=$("#checkPw").val();
+                      if(userpw==checkpw){
+                          $("#checkresult").css("color", "green").text("비밀번호가 일치합니다.");
+                      } else {
+                          $("#checkresult").css("color", "red").text("비밀번호가 일치하지 않습니다.");
+                      }
+                  }
+                  function emailSelect(){
+                      var email=$("#emailSel").val();
+                      $("#inputEmail").val(email);
+                  }
+                  function hidepw1(){
+                      var id=document.querySelector("#userPw");
+                      if(id.type==="password"){
+                          id.type="text";
+                      }
+                  }
+                  function hidepw2(){
+                      var id=document.querySelector("#checkPw");
+                      if(id.type==="password"){
+                          input.type="text";
+                      }
+                  }
+                  function showpw1(){
+                      var id=document.querySelector("#userPw");
+                      if(id.type==="text"){
+                          id.type="password";
+                      }
+                  }
+                  function showpw2(){
+                      var input=document.querySelector("#checkPw");
+                      if(input.type==="text"){
+                          input.type="password";
+                      }
+                  }
+                  function userinfo(){
+                      var Id="아이디 : " + $("#userid").val();
+                      var password="비밀번호 : " + $("#userPw").val();
+                      var name="이름 : " + $("#name").val();
+                      var birth="생년월일 : " + $("#birth").val();
+                      var email="이메일 : " + $("#email").val() + " @ " + $("#inputEmail").val();
+                      var phone="전화번호 : " + $("#phone").val();
+                      var text = Id + "\n" + password + "\n" + name + "\n" + birth + "\n" + email + "\n" + phone;
+                     
+                  }
+
+                  function button1(){
+                    const Chekid = $("#userid").val();
+                    $.ajax({
+                        type:"POST",
+                        url:"/signup",
+                        data : {id:Chekid},
+                        dataType:"json",
+                        success: function(data){
+                            if(data === '2'){
+                               alert('아이디가 중복입니다.')
+                           }else{
+                               alert('사용가능한 아이디입니다.')
+                               idck = 1;
+                               $("#userid").attr("readonly",true);  //아이디 텍스트박스 readonly 처리
+                           } 
+                        },error:function(request,status,error){
+                             alert("code = "+ request.status + " message = " + request.responseText + " error = " + error); // 실패 시 처리
+                         }
+                    })
+                 }
+
+                  function button2(){
+                      const emailChk = $("#email").val() + " @ " + $("#inputEmail").val();
+                    $.ajax({
+                        type:"post",
+                        url:"/signup/"+emailChk,
+                        data: {email:emailChk},
+                        dataType:'json',
+                        success: function(data){
+                           if(data==='1'){ 
+                           alert('이메일 발송 완료!');
+                           }else{
+                            alert('이미 가입된 이메일입니다!');
+                           }
+                        },error:function(request,status,error){
+                            alert("code = "+ request.status + " message = " + request.responseText + " error = " + error);
+                        }
+                    })
+                  }
+                  function button3(){
+                      const emailChk2 = $("#email").val() + " @ " + $("#inputEmail").val();
+                      const compl = $("#emailCheck").val();
+                      $.ajax({
+                        type:"post",
+                        url:"/signup/"+compl+'/'+emailChk2,
+                        data: {email:emailChk2,CHnumber:compl},
+                        dataType:'json',
+                        success: function(data){
+                            if(compl!=data){
+                                     alert('인증실패!')
+                                     }else{
+                                      alert('인증성공!')
+                                      emCk =1;
+                                     }
+                        },error:function(request,status,error){
+                            alert("code = "+ request.status + " message = " + request.responseText + " error = " + error);
+                        }
+                     })                     
+                    }
+
+                function ch(){
+                    if(emCk===1 && idck===1){
+                        alert('회원가입 완료!');
+                    }else if(emCk===0){
+                        alert('이메일 인증을 해주세요!');
+                        return false;   //경로 이동 막기
+                    }else if(idck===0){
+                        alert('아이디 인증을 해주세요!');
+                        return false;   //경로 이동 막기
+                    }
+
+                }
+                                  
+  </script>
+  </head>
+  <body>
+
+        <h2>회원가입</h2>
+        <form method="post" action="/complete" onsubmit='return ch()'>
+        <table>
+            <tr>
+                  <td><i class="fas fa-id-card"></i></td>
+                  <td class="fontcolor">아이디</td>
+                  <td><input type="text" name="id" placeholder="4~10자리" id="userid"><span id="idResult"></span>
+                    <span id="Checkuserid"><input type="button" id='useridCheckup' onclick="button1()" value="중복확인"> </span>  
+              </td>
+            </tr>
+            <tr>
+                  <td><i class="fas fa-key"></i></td>
+                  <td class="fontcolor">비밀번호</td>
+                  <td><input type="password" name="password" placeholder="8~16자리" id="userPw"><i class="fas fa-eye-slash" id="pw1"></i><span id="pwResult"></span></td>
+            </tr>
+            <tr>
+                  <td><i class="fas fa-check-circle"></i></td>
+                  <td class="fontcolor">비밀번호확인</td>
+                  <td><input type="password" name="checkPw" id="checkPw"><i class="fas fa-eye-slash" id="pw2"></i><span id="checkresult"></span></td>
+            </tr>
+            <tr>
+                  <td><i class="fas fa-user-circle"></i></td>
+                  <td class="fontcolor">이름</td>
+                  <td><input type="text" name='name' id="name"></td>
+            </tr>
+            <tr>
+                  <td><i class="fas fa-birthday-cake"></i></td>
+                  <td class="fontcolor">생년월일</td>
+                  <td><input type="text" name='birth' id="birth"maxlength="6" placeholder="생년월일(yymmdd)" ></td>
+            </tr>
+            <tr>
+                  <td><i class="fas fa-envelope"></i></td>
+                  <td class="fontcolor">이메일</td>
+                  <td><input type="text" id="email" name='email1'>@<input type="text" id="inputEmail"> <select name="email2" id="emailSel">
+                        <option value="">직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="nate.com">nate.com</option>
+                    </select></td>
+                    <td><input type="button" id='Checkemail' onclick="button2()" value="메일인증"></td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-email-alt"></i></td>
+                <td class="fontcolor">이메일인증번호</td>
+                <td><input type="text" id="emailCheck" name='emailCheck' maxlength="6"></td>
+                <td><input type="button" id='Checkemail2' onclick="button3()" value="인증확인"></td>
+          </tr>
+              <tr>
+                    <td colspan="3" style="text-align: center;"><button class="button" id="apply">회원가입</button></td>
+              </tr>
+          </table>
+        </form>
+
+      </body>
+      </html>

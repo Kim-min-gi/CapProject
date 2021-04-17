@@ -1,0 +1,119 @@
+.title{
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 40px 0;
+    word-break: keep-all;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd; 
+}
+.homepage{
+font-size: 18px;
+margin: 40px 0 40px 0;
+color: #666;
+}
+.overview{
+font-family: 'Noto Sans Korean', 'AppleSDGothicNeo-Regular', 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+font-size: 18px;
+line-height: 1.7;
+letter-spacing: -1px;
+margin: 40px 0 40px 0;
+}
+.wrap,body{
+max-width: 1140px;
+margin: 0 auto; /* 화면 가운데로 */
+background-color: #fff;
+padding: 20px;
+box-sizing: border-box;
+
+}
+.wrap h1{
+font-size: 38px;
+font-weight: 600;
+color: #333;
+letter-spacing: -1px;
+text-align: center;
+margin: 40px 0;
+word-break: keep-all;
+padding-bottom: 40px;
+border-bottom: 1px solid #ddd; 
+}
+.rating {
+padding: 30px;
+margin-left:280px;
+}
+.reviewform textarea{
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+margin-top:30px;
+}
+.rating .rate_radio {
+position: relative;
+display: inline-block;
+z-index: 20;
+opacity: 0.001;
+width: 60px;
+height: 60px;
+background-color: #fff;
+cursor: pointer;
+vertical-align: top;
+display: none;
+}
+.rating .rate_radio + label {
+position: relative;
+display: inline-block;
+margin-left: 20px;
+z-index: 10;
+width: 60px;
+height: 60px;
+background-image: url('/img/starrate.png');
+background-repeat: no-repeat;
+background-size: 60px 60px;
+cursor: pointer;
+background-color: #f0f0f0;
+}
+.rating .rate_radio:checked + label {
+background-color: #ff8;
+}
+
+.cmd{
+margin-top: 20px;
+text-align: right;
+}
+.cmd input[type="button"]{
+padding: 10px 20px;
+border: 1px solid #e8e8e8;
+background-color: #fff;
+background-color:#45489a;
+color: #fff;
+}
+.warning_msg {
+display: none;
+position: relative;
+text-align: center;
+background: #ffffff;
+line-height: 26px;
+width: 100%;
+color: red;
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #e0e0e0;
+}
+h2 {
+font-size: 18px;
+color: #222;
+font-weight: 700;
+}
+p{
+font-size: 18px;
+font-weight: 300;
+color:#666;
+}
+h3{
+margin-bottom:40px;
+font-size: 16px;
+line-height: 18px;
+}
