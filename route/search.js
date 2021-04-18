@@ -80,17 +80,19 @@ router.get('/:title',function(req,res){
    
 
    //db에 저장되어 있는 정보 출력  //tags = ser && content = '사람' or '행사' or '축제' data를 오름차순? 아니면 내림차순 해서 확인하기
-     crodata.find({tags:{$regex:ser}}, {'_id':0,'content':1,'data':1,'tags':1} , function(err, result) { // 1. 오늘날짜와 비교 후 출력 2. 3개만 출력하기? 3. 특정 명령어 넣어서 출력하기(사람, 축제 등등?) 4. 날짜순으로 오름차순으로 출력하기
-        if(err) { console.log(err)}
-        if(!result){
-            res.json('해당하는 데이터가 없습니다.');
-        }else{
-            
-            
-            res.json(result);             ///     res.json(JSON.stringify(result)); 로 작성하니 한글자씩 배열로 들어가버림; data[5]를 출력하면 n이 나와버림
-        }
-         
-    }) 
+   crodata.find({ $and: [ {tags:{$regex:ser}},{$or : [{content:{$regex:'사람'}} , {content:{$regex:'행사'}},{content:{$regex:'날씨'}}]}]}, {'_id':0,'content':1,'data':1,'tags':1} ,{sort:{data:-1}}, function(err, result) { // 1. 오늘날짜와 비교 후 출력 2. 3개만 출력하기? 3. 특정 명령어 넣어서 출력하기(사람, 축제 등등?) 4. 날짜순으로 오름차순으로 출력하기
+    if(err) { res.json(err)}
+    if(result.length){  //result에 값이 있을경우
+        // console.log('값있음');
+        // console.log(result);
+        res.json(result);  
+    }else{              //result에 값이 없을경우
+       // console.log('값없음');
+       // console.log(result);
+        res.json('2'); ///     res.json(JSON.stringify(result)); 로 작성하니 한글자씩 배열로 들어가버림; data[5]를 출력하면 n이 나와버림
+    }
+     
+}) 
 })
 
 
