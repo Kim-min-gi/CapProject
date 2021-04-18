@@ -31,44 +31,48 @@
         <h3>[출처] 한국관광공사</h3>
         <div class="map_wrap">
             <div id="map" style="width:100%;height:350px;"></div> 
-            <button id="peoplebox" onclick="location.href='/status'">
-                <div id="peopleinfo">혼잡도 표시</div>
-            </button>
             </div>
             <div class="homepage"></div>
         <div class="test1"></div>
         <div class="test2"></div>
 
-        <input type="button" id='crawler' onclick="button1()" value="크롤링">
-
-        <div>
-            <table>
-                <tr>
-                    <p>첫번째 크롤링 데이터</p>
-                <p id='crawlerdata1'></p>
-                <p id='crawlerdata2'></p>
-                <p id='crawlerdata3'></p>
-            </tr>
-            </table>
-            <table>
-                <tr>
-                    <p>두번째 크롤링 데이터</p>
-                <p id='crawlerdata4'></p>
-                <p id='crawlerdata5'></p>
-                <p id='crawlerdata6'></p>
-            </tr>
-            </table>
-            <table>
-                <tr>
-                    <p>세번째 크롤링 데이터</p>
-                <p id='crawlerdata7'></p>
-                <p id='crawlerdata8'></p>
-                <p id='crawlerdata9'></p>
-            </tr>
-            </table>
-        </div>
-
+        <li>
+            <div class="craw">    
+            <input type="button" id='crawler' onclick="button1()" value="크롤링">
+            </div>   
+            <div>
     
+                <table>
+                    <tr>
+                        <p>첫번째 크롤링 데이터</p>
+                    <p id='crawlerdata1'></p>
+                    <p id='crawlerdata2'></p>
+                    <p id='crawlerdata3'></p>
+                </tr>
+                </table>
+                <table>
+                    <tr>
+                        <p>두번째 크롤링 데이터</p>
+                    <p id='crawlerdata4'></p>
+                    <p id='crawlerdata5'></p>
+                    <p id='crawlerdata6'></p>
+                </tr>
+                </table>
+                <table>
+                    <tr>
+                        <p>세번째 크롤링 데이터</p>
+                    <p id='crawlerdata7'></p>
+                    <p id='crawlerdata8'></p>
+                    <p id='crawlerdata9'></p>
+                </tr>
+                </table>
+            </div>
+            </li>
+
+            <li class="busy">
+                <b>실시간 혼잡도</b>
+                <span>쾌적</span>
+            </li>
       
 
         <div class="wrap">
@@ -125,6 +129,26 @@ function getParameterByName(name) {
                 data : {title:title},
                 dataType:'json',
                 success: function(data){
+                    if(data==='2'){
+                           // console.log(JSON.stringify(data[0]))  //본문내용
+
+                            //첫번째 크롤링
+                            
+                              $('#crawlerdata1').html('본문내용 : ' +'해당하는 데이터 없음');
+                             $('#crawlerdata2').html('일자 :'+ '해당하는 데이터 없음');
+                             $('#crawlerdata3').html('태그들 : '+'해당하는 데이터 없음');  
+                             
+                             //두번째 크롤링
+                             $('#crawlerdata4').html('본문내용 : ' +'해당하는 데이터 없음');
+                             $('#crawlerdata5').html('일자 :'+ '해당하는 데이터 없음');
+                             $('#crawlerdata6').html('태그들 : '+'해당하는 데이터 없음');
+
+                             //세번째 크롤링
+                             $('#crawlerdata7').html('본문내용 : ' +'해당하는 데이터 없음');
+                             $('#crawlerdata8').html('일자 :'+ '해당하는 데이터 없음');
+                             $('#crawlerdata9').html('태그들 : '+'해당하는 데이터 없음');
+
+                    }else{
                              let arr1 =  JSON.stringify(data[0])
                              let arr2 =  JSON.stringify(data[1])
                              let arr3 =  JSON.stringify(data[2])
@@ -132,6 +156,7 @@ function getParameterByName(name) {
                             // console.log(JSON.stringify(data[0]))  //본문내용
 
                             //첫번째 크롤링
+                            
                               $('#crawlerdata1').html('본문내용 : ' +JSON.parse(arr1).content);
                              $('#crawlerdata2').html('일자 :'+ JSON.parse(arr1).data);
                              $('#crawlerdata3').html('태그들 : '+JSON.parse(arr1).tags);  
@@ -146,6 +171,8 @@ function getParameterByName(name) {
                              $('#crawlerdata8').html('일자 :'+ JSON.parse(arr3).data);
                              $('#crawlerdata9').html('태그들 : '+JSON.parse(arr3).tags);
 
+
+                    }
 
 
                         },error:function(request,status,error){
