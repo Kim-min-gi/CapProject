@@ -117,3 +117,44 @@ margin-bottom:40px;
 font-size: 16px;
 line-height: 18px;
 }
+li{
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+    min-height: 45px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+.craw input[type="button"]{
+    padding: 10px 20px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    background-color:#45489a;
+    color: #fff;
+    }
+.busy{
+    display: block;
+    margin-top: 30px;
+    padding: 10px 15px;
+    width: 100%;
+    min-height: 45px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+b{
+    width: 55px;
+    color: #666;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+}
+span{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 22px;
+    color:#0a6fcc;
+}
