@@ -4,16 +4,16 @@ import re
 from bs4 import BeautifulSoup
 import pandas as pd
 import pymongo
+import sys
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 
-db = client["mydatabase"]
-col = db["customers"]
+db = client["data"]
+col = db["cro"]
 
 def insta_searching(word):
     url = "http://www.instagram.com/explore/tags/" + word
     return url
-
 
 driver = webdriver.Chrome('chromedriver.exe')
 
@@ -35,7 +35,7 @@ input_pw.send_keys(password)
 input_pw.submit()
 time.sleep(3)
 
-word = "해운대"
+word = sys.argv[1]
 url = insta_searching(word)
 driver.get(url)
 time.sleep(5)
@@ -91,7 +91,7 @@ def move_next(driver):
 
 move_next(driver)
 
-target = 5 # 크롤링할 게시글 수
+target = 15 # 크롤링할 게시글 수
 
 for i in range(target):
 
@@ -103,10 +103,8 @@ for i in range(target):
 
     except:
         time.sleep(2)
-        move_next(driver)
+        driver.close
 
-#print(results[:2])
 
 results_df = pd.DataFrame(results)
-#results_df.columns = ['index','content', 'data', 'like', 'place', 'tags']
 driver.close()
