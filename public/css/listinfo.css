@@ -149,6 +149,8 @@ b{
     letter-spacing: -0.5px;
 }
 span{
+    background:url('/img/good.svg') left center no-repeat;
+    background-size:22px 22px;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bolder;
     margin-left: 10px;
@@ -156,5 +158,12 @@ span{
     height: 27px;
     line-height: 27px;
     font-size: 22px;
+    padding-left:33px;
     color:#0a6fcc;
+}
+em{
+    margin-left:10px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
 }
