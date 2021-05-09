@@ -37,9 +37,8 @@
         <div class="test2"></div>
 
         <li>
-            <div class="craw"> 
+            <div class="craw">    
             <input type="button" id='crawler' onclick="button1()" value="크롤링">
-            <em>3~5분 소요</em>
             </div>   
             <div>
     
@@ -70,9 +69,9 @@
             </div>
             </li>
 
-            <li class="busy">
+            <li class="busy"> 
                 <b>실시간 혼잡도</b>
-                <span>쾌적</span>
+                <span id ='state'>쾌적</span>
             </li>
       
 
@@ -130,12 +129,13 @@ function getParameterByName(name) {
                 data : {title:title},
                 dataType:'json',
                 success: function(data){
-                    if(data==='2'){
-                           // console.log(JSON.stringify(data[0]))  //본문내용
+                    var len= data.length;
 
+                    if(data[0]===1 || data[0]===2 || data[0]===3){  //추츨 데이터가 없을 경우
+                                                   
+                            //console.log(JSON.stringify(data[len-1])
                             //첫번째 크롤링
-                            
-                              $('#crawlerdata1').html('본문내용 : ' +'해당하는 데이터 없음');
+                             $('#crawlerdata1').html('본문내용 : ' +'해당하는 데이터 없음');
                              $('#crawlerdata2').html('일자 :'+ '해당하는 데이터 없음');
                              $('#crawlerdata3').html('태그들 : '+'해당하는 데이터 없음');  
                              
@@ -149,29 +149,65 @@ function getParameterByName(name) {
                              $('#crawlerdata8').html('일자 :'+ '해당하는 데이터 없음');
                              $('#crawlerdata9').html('태그들 : '+'해당하는 데이터 없음');
 
-                    }else{
+                        if(data[len-1]===1){
+                            $('#state').html('쾌적');
+                        }else if(data[len-1]===2){
+                            $('#state').html('보통');
+                        }else{
+                            $('#state').html('혼잡');
+                        }
+ 
+
+                    }else{  // 추출 데이터가 있을 경우
+
                              let arr1 =  JSON.stringify(data[0])
                              let arr2 =  JSON.stringify(data[1])
                              let arr3 =  JSON.stringify(data[2])
 
+                             //첫번째 크롤링
+                             if(arr1==undefined){
+                                $('#crawlerdata1').html('본문내용 : ' +'해당하는 데이터 없음');
+                                $('#crawlerdata2').html('일자 :'+ '해당하는 데이터 없음');
+                                $('#crawlerdata3').html('태그들 : '+'해당하는 데이터 없음');  
+                             }else{
+                                $('#crawlerdata1').html('본문내용 : ' +JSON.parse(arr1).content);
+                                $('#crawlerdata2').html('일자 :'+ JSON.parse(arr1).date);
+                                $('#crawlerdata3').html('태그들 : '+JSON.parse(arr1).tags); 
+                             }
                             // console.log(JSON.stringify(data[0]))  //본문내용
 
-                            //첫번째 크롤링
-                            
-                              $('#crawlerdata1').html('본문내용 : ' +JSON.parse(arr1).content);
-                             $('#crawlerdata2').html('일자 :'+ JSON.parse(arr1).data);
-                             $('#crawlerdata3').html('태그들 : '+JSON.parse(arr1).tags);  
+                            //두번째 크롤링
+                            if(arr2==undefined || arr2==1||arr2==2||arr2==3){
+                                $('#crawlerdata4').html('본문내용 : ' +'해당하는 데이터 없음');
+                                $('#crawlerdata5').html('일자 :'+ '해당하는 데이터 없음');
+                                $('#crawlerdata6').html('태그들 : '+'해당하는 데이터 없음');
+
+                             }else{
+                                $('#crawlerdata4').html('본문내용 : ' +JSON.parse(arr2).content);
+                                $('#crawlerdata5').html('일자 :'+ JSON.parse(arr2).date);
+                                $('#crawlerdata6').html('태그들 : '+JSON.parse(arr2).tags);
+                             }
                              
-                             //두번째 크롤링
-                             $('#crawlerdata4').html('본문내용 : ' +JSON.parse(arr2).content);
-                             $('#crawlerdata5').html('일자 :'+ JSON.parse(arr2).data);
-                             $('#crawlerdata6').html('태그들 : '+JSON.parse(arr2).tags);
-
                              //세번째 크롤링
-                             $('#crawlerdata7').html('본문내용 : ' +JSON.parse(arr3).content);
-                             $('#crawlerdata8').html('일자 :'+ JSON.parse(arr3).data);
-                             $('#crawlerdata9').html('태그들 : '+JSON.parse(arr3).tags);
+                             if(arr3==undefined||arr2==1||arr2==2||arr2==3){
+                                $('#crawlerdata7').html('본문내용 : ' +'해당하는 데이터 없음');
+                                $('#crawlerdata8').html('일자 :'+ '해당하는 데이터 없음');
+                                $('#crawlerdata9').html('태그들 : '+'해당하는 데이터 없음'); 
+                             }else{
+                                $('#crawlerdata7').html('본문내용 : ' +JSON.parse(arr3).content);
+                                $('#crawlerdata8').html('일자 :'+ JSON.parse(arr3).date);
+                                $('#crawlerdata9').html('태그들 : '+JSON.parse(arr3).tags);
+                             }
+                            
 
+                             if(data[len-1]===1){
+                            $('#state').html('쾌적');
+                                }else if(data[len-1]===2){
+                            $('#state').html('보통');
+                                }else{
+                            $('#state').html('혼잡');
+                                 }
+ 
 
                     }
 
@@ -184,6 +220,11 @@ function getParameterByName(name) {
 
 
         }
+
+
+
+
+
     var contentid = '<%=rr%>';
     $.getJSON(
             'http://api.visitkorea.or.kr/openapi/service/rest/KorService/detailCommon?ServiceKey=6YaWFbmIjrHFjffRP7kOiUmCPVNpcUny7t6%2BV1GPx4Zh72Bz1fLFzTy9WV2a5LmpgMsVLjPBJdjvli7vSxvnyg%3D%3D&contentId=' + contentid + '&defaultYN=Y&firstImageYN=Y&overviewYN=Y&addrinfoYN=Y&mapinfoYN=Y&MobileOS=ETC&MobileApp=AppTesting',

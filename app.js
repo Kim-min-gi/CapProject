@@ -23,7 +23,7 @@ db.once('open', function(){
 });
 
 
-mongoose.connect("mongodb+srv://user1:1234@cluster0.9hxjc.mongodb.net/data?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true,useFindAndModify: false  });
+mongoose.connect("mongodb://localhost:27017/data", { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true,useFindAndModify: false  });
 
 
 //Model

@@ -91,7 +91,7 @@ def move_next(driver):
 
 move_next(driver)
 
-target = 15 # 크롤링할 게시글 수
+target = 5 # 크롤링할 게시글 수
 
 for i in range(target):
 

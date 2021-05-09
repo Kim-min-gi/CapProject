@@ -26,7 +26,7 @@ let Fulldate = year + '-' + month + '-' + day;
 
 function FindCrawler(crawler) {
  
-   return crodata.find({ $and: [ {tags:{$regex:crawler}},{$or : [{content:{$regex:'사람'}} , {content:{$regex:'행사'}},{content:{$regex:'날씨'}}]}]}, {'_id':0,'content':1,'data':1,'tags':1} ,{sort:{data:-1}}).exec();
+   return crodata.find({ $and: [ {tags:{$regex:crawler}},{$or : [{content:{$regex:'사람'}} , {content:{$regex:'행사'}},{content:{$regex:'날씨'}}]}]},{_id:0,content:1,date:1,tags:1},{sort:{data:-1}}).exec();
 }
 
 function CountCrawler(crawler){
@@ -90,27 +90,21 @@ router.get('/:title',function(req,res){
     
       if(0<=ch<50){ // ch가 0~50 미만일 경우 쾌적
         Congestion=1
-        console.log(typeof(li));
+        li.push(Congestion);
         console.log(li);
-        console.log(ch);
-        li.push(Congestion)
         res.json(li);
 
         
       }else if(50<=ch<100){ //ch가 50이상100미만 보통
         Congestion=2
-        console.log(typeof(li));
+        li.push(Congestion);
         console.log(li);
-        console.log(ch);
-        li.push(Congestion)
         res.json(li);
 
       }else if(ch>100){ //ch가 100이상일 경우 혼잡
         Congestion=3
-        console.log(typeof(li));
+        li.push(Congestion);
         console.log(li);
-        console.log(ch);
-        li.push(Congestion)
         res.json(li);
       }
   

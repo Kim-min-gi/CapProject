@@ -2,7 +2,7 @@ const mongodb = require("mongodb").MongoClient;
 const csvtojson = require("csvtojson");
 
 // let url = "mongodb://username:password@localhost:27017/";
-let url = "mongodb+srv://user1:1234@cluster0.9hxjc.mongodb.net/<dbname>?retryWrites=true&w=majority";
+let url = "mongodb://localhost:27017/data";
 
 
 var save = csvtojson()
