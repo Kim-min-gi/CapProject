@@ -103,8 +103,8 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 }); */
+const PORT = process.env.PORT
 
-
-app.listen(process.env.PORT || 3000,function(){
+app.listen(PORT,function(){
     console.log('hello world');
 });
