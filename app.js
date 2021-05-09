@@ -60,8 +60,8 @@ var posts = require('./route/posts');  //게시판 페이지
 app.use(methodOverride('_method'));
 app.use(flash());
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 app.set('views',__dirname+'/views');  // == app.set('views',path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 app.engine('html',require('ejs').renderFile);
