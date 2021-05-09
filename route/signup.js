@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 const User = require('../model/user');
 var mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
+const bcrypt = require("bcryptjs");
 const nodemailer = require('nodemailer');
 let secretObj = require("../config/jwt");
 

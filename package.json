@@ -1,17 +1,17 @@
 {
   "name": "cap",
   "version": "1.0.0",
-  "engines": { 
-    "node": "14.15.0" 
- },
+  "engines": {
+    "node": "14.15.0"
+  },
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "async": "^3.2.0",
-    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "child_process": "^1.0.2",
     "connect-flash": "^0.1.1",
@@ -31,7 +31,6 @@
     "python-shell": "^2.0.3"
   },
   "devDependencies": {},
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DANGHYEON/CapProject.git"
