@@ -34,9 +34,7 @@ mongoose.connect("mongodb://localhost:27017/data", { useNewUrlParser: true, useU
 
 // app
 var app = express();
-// body-parser가 express 에 있어서 express로 해도 됨. 그래도 bady=parser가 필요할 때가 있음.
-// app.use(bodyParser.json()); == app.use(express.json());
-// app.use(bodyParser.urlencoded({ extended: false})); == app.use(express.urlencoded( { extended : false }));
+
 
 
 
@@ -64,7 +62,6 @@ app.use(flash());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
-app.use(session({ secret: '비밀코드', resave: true, saveUninitialized: false })); // 세션 활성화
 app.set('views',__dirname+'/views');  // == app.set('views',path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 app.engine('html',require('ejs').renderFile);

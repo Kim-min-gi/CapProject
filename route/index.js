@@ -8,14 +8,6 @@ let secretObj = require("../config/jwt");
 
 
 
-
-
-
-
-
-
-
-
 router.get('/',async function(req,res){
 
      var isOwner =false;
