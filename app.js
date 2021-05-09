@@ -1,5 +1,4 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 const createError = require('http-errors');
 var morgan = require('morgan');
